@@ -1,3 +1,4 @@
-## Armasenamento de códigos de estudo do javaScript
+# Armasenamento de códigos de estudo do javaScript
 
-#Formação Angular Básico ao Avançado, coloque suas habilidades Angular
+## Formação Angular Básico ao Avançado
+Git e Github, Html, CSS, Javascript, Typescritp e Angular
