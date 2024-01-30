@@ -39,13 +39,13 @@
 // Aula 4 - Acesando Dinamicamente valores de um objeto
 
 const pessoa = {
-        nome: 'Leandro Vilar',
-        idade: 43,
-        descrever: function () {
-            console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
-        }
-    };
-    
-    // pessoa.nome = 'Marlene';
-    // pessoa.idade = 44;
-    pessoa.descrever();
+    nome: 'Leandro Vilar',
+    idade: 43,
+    descrever: function () {
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
+    }
+};
+
+const atrituto = 'idade';
+console.log(pessoa[atrituto]);
+console.log(pessoa['nome']);
