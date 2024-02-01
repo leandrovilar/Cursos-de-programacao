@@ -3,7 +3,6 @@ unshift = add item no inicio do Array
 pusn = add item no final do Array
 */
 
-
 let arr = [1, 2, 3, 4, 5];
 
 arr.unshift(0);
