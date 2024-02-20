@@ -5,11 +5,12 @@
 //     nome;
 //     idade;
 
+//// para descrever metodo não precisa da palabra function em uma function
 //     descrever() {
 //         console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
 //     }
 // }
-// // instância 
+// // uma instância é um ocorrência da classe Pessoa
 // const leandro = new Pessoa();
 // leandro.nome = `Leandro Vilar`;
 // leandro.idade = 43;
@@ -37,11 +38,11 @@ class Pessoa {
         this.idade = idade;
         this.anoDeNascimento = 2024 - idade;
     }
-
     descrever() {
         console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
     }
 }
+
 
 const leandro = new Pessoa(`Leandro Vilar`, 43);
 console.log(leandro);
