@@ -20,21 +20,23 @@ const pedidos = [
     {
         id: 33,
         nome: "Marlene",
-        alimento: "Sanduiche",
+        alimento: "Pizza",
         bebida: "Refrigerante",
     },
     {
         id: 22,
         nome: "Sofia",
-        alimento: "Sanduiche",
+        alimento: "Pizza",
         bebida: "Refrigerante",
     },
 ];
 
-// Trata todo o Array e verifica se está ok
+//O Some pertunta se apenas 1 dos valores do Array equivale a sua condição
 
-const tenRefri = pedidos.every((element) => {
-    return element.bebida === "Refrigerante";
-});
 
-console.log(tenRefri);
+const existeAlimento = pedidos.some((element, index)  => {
+    return element.alimento === "Pizza";
+
+    });
+
+    console.log(existeAlimento);
