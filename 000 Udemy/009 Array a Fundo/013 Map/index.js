@@ -31,6 +31,9 @@ const pedidos = [
     },
 ];
 
+/*
+O método Map além de iterar todo o Array ele é muito bom para editar o iterado (resumindo a )
+*/
 pedidos.map((element, index) => {
     if (element.id === 33 && element.alimento === "Sanduiche") {
         return (element.alimento = "kibe");
