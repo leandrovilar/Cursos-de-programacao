@@ -1,5 +1,7 @@
 //Array
-let array1: [string, string, number, boolean] = ["Leandro Vilar", "teste", 123, false] // dessa forma só da para colocar o que for pedido no array
+
+
+let array1: [string, string, number, boolean] = ["Leandro Vilar", "teste", 123, false] // (Tuplas) dessa forma só da para colocar na ordem que for pedido no array
 let array2: Array<string | number | boolean> = ["Leandro Vilar", "teste", 123, false] // dessa formar pode ser colocado varias argumentos 
 
 //Object
