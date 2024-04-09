@@ -12,6 +12,12 @@ class Pessoa {
     public nome: string = "";
    public idade: number = 0;
 
+   private _professor: string = "Programador"; // o andelien(_) atributo com privado
+
+    /*Essa linha de código cria um atributo privado chamado _professor, que armazena
+     o tipo string e é inicializado com o valor "Programador". Esse atributo só pode 
+     ser acessado dentro da classe onde é definido.*/
+
     constructor(nome: string, idade: number) {
         this.nome = nome;
         this.idade = idade;
