@@ -10,8 +10,8 @@ import { TemplateBindingComponent } from './components/template/template-binding
   standalone: true,
   imports: [CommonModule, RouterOutlet, NewComponent, TemplateBindingComponent],
   template: `
-  // <router-outlet></router-outlet>
-  // <app-new-component />
+  <!-- <router-outlet></router-outlet>  -->
+  <!-- <app-new-component />  -->
   <h1>Curso de Angular</h1>
   <app-template-binding />
   `,
