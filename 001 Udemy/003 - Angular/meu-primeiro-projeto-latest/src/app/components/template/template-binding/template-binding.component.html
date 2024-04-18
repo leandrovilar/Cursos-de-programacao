@@ -1,15 +1,38 @@
 <h2>Template</h2>
 <h3>Text Inperpolation</h3>
-<p>{{ name }} - {{age}} - {{ sum(1,2)}}</p>
+<p>{{ name }} - {{age}}</p>
 
 <p>{{condition}}</p>
-
 <hr />
 
 <h2>Property binding</h2>
 <!-- sintaxe -->
 <!-- <element [property]='value']></element> -->
-
 <button [disabled]="isDisabled">Button</button>
 <!-- <img [src]="srcValue" [alt]="name" title="name"/> -->
+<Hr/>
 
+<h2>Attribute binding</h2>
+<!-- <element [attr.atribute-you-are-targeting]='value'></element> -->
+<p [attr.title]="name" [attr.aria-label] ="name">Marlene</p>
+<Hr/>
+<h2>Classe and stule binding</h2>
+<p [class.background-red]="true"> {{ name }}</p>
+<p [class.background-red]="age >= 44" [class.background-blue]="age < 44"> {{ name }}</p>
+
+<p [style.text-decoration]="isTextDecoration">{{ age }}</p>
+<Hr/>
+
+<h2>Event binding</h2>
+<!-- <element (targetEventName)="TemplateStatement" > 
+</element> -->
+<button (click)="sum()">+</button>
+<button (click)="sub()">-</button>
+
+<input title="Mouse" (keydown.shift.t)="onkeyDown($event)">   
+
+<!-- <div style="background: red; width: 30px; height: 30px; margin-top: 10px;"></div> -->
+<div 
+class="quadrado" 
+(mousemove)="onMouseMove($event)"
+></div>
