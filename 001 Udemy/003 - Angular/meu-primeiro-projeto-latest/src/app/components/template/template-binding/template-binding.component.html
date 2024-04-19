@@ -39,5 +39,14 @@ class="quadrado"
 <Hr/>
 
 <h3>Two-way binding</h3>
-<input title="2" [(ngModel)]="name"/>
+<!-- <input [(ngModel)]="name"/> -->
 {{ name }}
+<hr/>
+
+<h3>Diretiva de atributo</h3>
+<div [ngClass]="{ 'background-red': true }">Classe condicionais.</div>
+
+<!-- <div [ngStyle]="{
+    color: age > 35 ? 'green' : 'red'
+    'fonte-size': age > 35 ? '10px' : '20px',
+}">Estilo dinâmivo</div> -->
