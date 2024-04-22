@@ -1,11 +1,10 @@
 <h2>Control Flow</h2>
 <h3>IF</h3>
-<h3>Leandro</h3>
 
 <!-- NOVA FORMA -->
 @if (isTrue){
-    <p>leandro1 </p>
-    <p>Braga 1 </p>
+<p>leandro1 </p>
+<p>Braga 1 </p>
 } @else {Nao esta correto}
 
 <!-- Forma antiga -->
@@ -14,4 +13,21 @@
     <p>Braga 2</p>
 </ng-container>
 <ng-template #isFalse> Nao esta correto </ng-template>
+
+
+<H3>IF, FOR</H3>
+
+<!-- Nova forma -->
+<!-- @if(loadingData$ | async; as data){
+<ul>
+    @for(item of data; track item){
+    <li>{{ item }}</li>
+    }
+</ul>
+} @else {
+<p> Carregando...</p>
+}
+@for(item of loadingData | async; track item){
+<li> {{ item }} </li>
+} -->
 
