@@ -1,0 +1,17 @@
+<h2>Control Flow</h2>
+<h3>IF</h3>
+<h3>Leandro</h3>
+
+<!-- NOVA FORMA -->
+@if (isTrue){
+    <p>leandro1 </p>
+    <p>Braga 1 </p>
+} @else {Nao esta correto}
+
+<!-- Forma antiga -->
+<ng-container *ngif="isTrue; else isFalce">
+    <p>leandro 2</p>
+    <p>Braga 2</p>
+</ng-container>
+<ng-template #isFalse> Nao esta correto </ng-template>
+
