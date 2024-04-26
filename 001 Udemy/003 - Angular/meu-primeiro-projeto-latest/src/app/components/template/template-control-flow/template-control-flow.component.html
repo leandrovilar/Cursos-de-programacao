@@ -1,5 +1,5 @@
 <h2>Control Flow</h2>
-<h3>IF</h3>
+<!-- <h3>IF</h3> -->
  
 <!--NOVA FORMA -->
 <!--@if (isTrue){
@@ -30,10 +30,13 @@ Forma antiga
 @for(item of loadingData | async; track item){
 <li> {{ item }} </li>
 }-->
-
 <br>
+
+
+<!-- @For e seus valores -->
+
 <!-- Forma nova -->
-@for(
+<!-- @for(
 item of itens; track item.name;
 let i = $index;
 let c = $count;
@@ -73,6 +76,28 @@ let item of itens;
 </ng-container>
 
 <input #name type="text">
-<button (click)="addNewName(name.value)">Add Name</button>
+<button (click)="addNewName(name.value)">Add Name</button> -->
 
+<!-- @For - @empty -->
 
+<!-- Forma nova -->
+<ul>
+    @for (item of itens; track item.name){
+        <li> {{ item.name }}</li>
+    } @empty {
+        <li> Não contém valores </li>
+    }
+</ul>
+<!-- forma antiga -->
+<ul>
+<ng-container *ngIf="itens.length === 0; else itensExist">
+    <li> Não contém valores </li>
+</ng-container>
+<ng-template #itensExist>
+    <ng-container *ngFor="let item of itens">
+        <li>
+            {{ item.name }}
+        </li>
+    </ng-container>
+</ng-template>
+</ul>
