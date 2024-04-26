@@ -1,6 +1,6 @@
 <h2>Control Flow</h2>
 <!-- <h3>IF</h3> -->
- 
+
 <!--NOVA FORMA -->
 <!--@if (isTrue){
 <p>leandro1 </p>
@@ -81,15 +81,16 @@ let item of itens;
 <!-- @For - @empty -->
 
 <!-- Forma nova -->
-<ul>
+<!-- <ul>
     @for (item of itens; track item.name){
         <li> {{ item.name }}</li>
     } @empty {
         <li> Não contém valores </li>
     }
-</ul>
+</ul> -->
+
 <!-- forma antiga -->
-<ul>
+<!-- <ul>
 <ng-container *ngIf="itens.length === 0; else itensExist">
     <li> Não contém valores </li>
 </ng-container>
@@ -100,4 +101,33 @@ let item of itens;
         </li>
     </ng-container>
 </ng-template>
-</ul>
+</ul> -->
+
+
+<!-- Switch case -->
+
+<!-- Forma nova -->
+@switch (switchCondition) {
+@case ('A') {
+<p>Sim sua letra é: A</p>
+}
+@case ('B') {
+<p>Sim sua letra é: B</p>
+}
+@default {
+<p>Os dados não foram encontrados</p>
+}
+}
+
+<!-- forma antiga -->
+<ng-container [ngSwitch] ="switchCondition">
+    <ng-container *ngSwitchCase="'A'">
+        <p>Sim sua letra é: A</p>
+    </ng-container>
+    <ng-container *ngSwitchCase="'B'">
+        <p>Sim sua letra é: B</p>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+        <p>Os dados não foram encontrados</p>
+    </ng-container>
+</ng-container>

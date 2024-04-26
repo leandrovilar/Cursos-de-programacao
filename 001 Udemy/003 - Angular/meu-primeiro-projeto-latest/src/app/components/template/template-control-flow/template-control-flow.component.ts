@@ -1,11 +1,13 @@
-import { AsyncPipe, CommonModule, NgFor, NgIf } from '@angular/common';
+import { AsyncPipe, CommonModule, NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { Component } from '@angular/core';
 import { Observable, delay, of } from 'rxjs';
 
 @Component({
   selector: 'app-template-control-flow',
   standalone: true,
-  imports: [AsyncPipe, NgIf, NgFor, CommonModule],
+  // CommonModule substitui todos os imports
+  imports: [CommonModule],
+  // imports: [AsyncPipe, NgIf, NgFor, NgSwitch, NgSwitchCase, NgSwitchDefault]
   templateUrl: './template-control-flow.component.html',
   styleUrl: './template-control-flow.component.scss',
 })
@@ -27,5 +29,10 @@ export class TemplateControlFlowComponent {
 public addNewName(value: string){
   return this.itens.push({name: value});
 }
+
+// Switch case
+public switchCondition = "c";
+
+
 }
 
