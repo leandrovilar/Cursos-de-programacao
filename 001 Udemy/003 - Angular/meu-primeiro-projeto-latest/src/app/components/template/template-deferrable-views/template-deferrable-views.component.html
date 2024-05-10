@@ -1,6 +1,25 @@
-<h2>Deferrable View</h2>
 
-@defer { <app-new-component /> }
+<!-- Introducao  -->
+<!-- @defer { <app-new-component /> }
 @placeholder { <p>Mostrar antes de carregar algo.</p> }
 @loading { <p>Loading...</p> }
-@error { <p>Loading failed :( </p> }
+@error { <p>Loading failed :( </p> } -->
+
+<!-- 
+    on - especifica uma condicao de acionador usando um acionador da lista.
+    (idle, timer, viewport, interaction, hover, immediate, prefetch)
+
+    when - especifica uma condicao imperativa como uma expressao que retorna um booleano. Quando esta expressao se torna verdadeira, o espaço reservado é trocado pelo conteúdo carregado lentamente (o que pode ser uma operacao assincrona se as dependencias precisarem ser buscadas).
+
+    Nota: Varios on triggers sao sempre condicoes OR. Da mesma forma, on misturado com when também sao condicoes OR.
+ -->
+ <h2 #trigger>Deferrable View</h2>
+@defer (on timer(5s); on interaction(triggers); on hover;){
+<app-new-component /> }
+@placeholder {
+<p>Mostrar antes de carregar algo.</p> }
+@loading {
+<p>Loading...</p> }
+@error {
+<p>Loading failed :( </p>
+}
