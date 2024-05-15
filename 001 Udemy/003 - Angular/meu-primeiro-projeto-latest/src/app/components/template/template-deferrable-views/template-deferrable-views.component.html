@@ -13,7 +13,7 @@
 
     Nota: Varios on triggers sao sempre condicoes OR. Da mesma forma, on misturado com when também sao condicoes OR.
  -->
- <h2 #trigger>Deferrable View</h2>
+ <!-- <h2 #trigger>Deferrable View</h2>
 @defer (on timer(5s); on interaction(triggers); on hover;){
 <app-new-component /> }
 @placeholder {
@@ -22,4 +22,29 @@
 <p>Loading...</p> }
 @error {
 <p>Loading failed :( </p>
-}
+} -->
+
+
+<!-- @placeholder -->
+<!-- <h2 #trigger>Deferrable View</h2>
+@defer{
+<app-new-component /> }
+@placeholder (minimun 5s) {
+<p>Mostrar antes de carregar algo.</p> }
+@loading {
+<p>Loading...</p> }
+@error {
+<p>Loading failed :( </p> -->
+
+
+<!-- @loading -->
+<!-- <h2 #trigger>Deferrable View</h2>
+@defer{
+<app-new-component /> }
+@placeholder{
+<p>Mostrar antes de carregar algo.</p> }
+@loading(after 150ms; minimun 5s){
+<p>Loading...</p> }
+@error {
+<p>Loading failed :( </p> -->
+
