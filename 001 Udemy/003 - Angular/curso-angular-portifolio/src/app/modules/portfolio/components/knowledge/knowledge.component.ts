@@ -1,5 +1,8 @@
 import { Component, signal } from '@angular/core';
 
+//Interface
+import { IKnowLedge } from '../../interface/knowledge.interface';
+
 @Component({
   selector: 'app-knowledge',
   standalone: true,
@@ -8,29 +11,29 @@ import { Component, signal } from '@angular/core';
   styleUrl: './knowledge.component.scss'
 })
 export class KnowledgeComponent {
-public arrayknowledge = signal([
+public arrayknowledge = signal<IKnowLedge[]>([
   {
-    src: 'assets/icon.knowledge/html5.svg',
+    src: 'assets/icons/knowledge/html5.svg',
     alt: 'Ícone de conhecimento de html5',
   },
   {
-    src: 'assets/icon.knowledge/css3.svg',
+    src: 'assets/icons/knowledge/css3.svg',
     alt: 'Ícone de conhecimento de css3',
   }, 
   {
-    src: 'assets/icon.knowledge/javascript.svg',
+    src: 'assets/icons/knowledge/javascript.svg',
     alt: 'Ícone de conhecimento de javascript',
   },  
   {
-    src: 'assets/icon.knowledge/angular.svg',
+    src: 'assets/icons/knowledge/angular.svg',
     alt: 'Ícone de conhecimento de Angular',
   }, 
    {
-    src: 'assets/icon.knowledge/nodejs.svg',
+    src: 'assets/icons/knowledge/nodejs.svg',
     alt: 'Ícone de conhecimento de nodejs',
   },  
   {
-    src: 'assets/icon.knowledge/html5.svg',
+    src: 'assets/icons/knowledge/html5.svg',
     alt: 'Ícone de conhecimento de html%',
   },
 ])
