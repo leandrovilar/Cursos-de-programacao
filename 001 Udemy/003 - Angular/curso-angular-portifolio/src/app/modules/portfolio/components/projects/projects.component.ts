@@ -26,5 +26,48 @@ export class ProjectsComponent {
         }
       ]
     },
+    {
+      src: 'assets/img/projects/vfull.png',
+      alt: 'Projeto Vida FullStack',
+      title: 'Vida FullStack',
+      with: '100px',
+      height: '51px',
+      description: ' Explore o meu munde de programador',
+      links: [
+        {
+          name: 'Conheça o Blog',
+          href: 'https://vidafullstack.com.br',
+        }
+      ]
+    },
+    {
+      src: 'assets/img/projects/vfull.png',
+      alt: 'Projeto Vida FullStack',
+      title: 'Vida FullStack',
+      with: '100px',
+      height: '51px',
+      description: ' Explore o meu munde de programador',
+      links: [
+        {
+          name: 'Conheça o Blog',
+          href: 'https://vidafullstack.com.br',
+        }
+      ]
+    },
+    {
+      src: 'assets/img/projects/vfull.png',
+      alt: 'Projeto Vida FullStack',
+      title: 'Vida FullStack',
+      with: '100px',
+      height: '51px',
+      description: ' Explore o meu munde de programador',
+      links: [
+        {
+          name: 'Conheça o Blog',
+          href: 'https://vidafullstack.com.br',
+        }
+      ]
+    },
+    
   ]);
 }
