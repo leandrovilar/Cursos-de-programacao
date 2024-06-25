@@ -1,8 +1,8 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
-import { IProjects } from '../../../interface/IProjects.interface';
+import { Component, OnInit, Inject, signal } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 // Interface
-import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { IProjects } from '../../../interface/IProjects.interface';
 
 @Component({
   selector: 'app-dialog-projects',
@@ -15,7 +15,8 @@ export class DialogProjectsComponent implements OnInit {
 
   constructor(
     private _dialogRef: MatDialogRef<DialogProjectsComponent>,
-    @inject(MAT_DIALOG_DATA) private _data: IProjects) { }
+    @Inject (MAT_DIALOG_DATA) private _data: IProjects) { }
+    
   public getData = signal<IProjects | null>(null)
 
   ngOnInit(): void {
