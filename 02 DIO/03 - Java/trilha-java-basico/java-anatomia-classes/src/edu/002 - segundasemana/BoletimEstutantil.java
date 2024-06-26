@@ -1,4 +1,4 @@
-package edu.segundasemana;
+package edu.002 - segundasemana;
 public class BoletimEstutantil {
     public static void main(String[] args) {
         int mediaFinal = 6;
