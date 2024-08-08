@@ -2,7 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { WeatherService } from '../../services/weather.service';
-import { WeatherDatas } from 'src/app/models/interfaces/WeatherDatas';
+import { WeatherDatas } from 'src/app/models/interfaces/WeatheDatas';
+
 
 @Component({
   selector: 'app-weather-home',
