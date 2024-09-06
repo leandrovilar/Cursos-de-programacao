@@ -1,0 +1,15 @@
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.AssemblyInfoInputs.cache
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.AssemblyInfo.cs
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.csproj.CoreCompileInputs.cache
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.sourcelink.json
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\bin\Debug\net8.0\ExemploFundametos.exe
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\bin\Debug\net8.0\ExemploFundametos.deps.json
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\bin\Debug\net8.0\ExemploFundametos.runtimeconfig.json
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\bin\Debug\net8.0\ExemploFundametos.dll
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\bin\Debug\net8.0\ExemploFundametos.pdb
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.dll
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\refint\ExemploFundametos.dll
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.pdb
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ExemploFundametos.genruntimeconfig.cache
+C:\Users\Leandro\Desktop\Front-End\cursos_de_programacao\02 DIO\04-.NET\ExemploFundametos\obj\Debug\net8.0\ref\ExemploFundametos.dll
