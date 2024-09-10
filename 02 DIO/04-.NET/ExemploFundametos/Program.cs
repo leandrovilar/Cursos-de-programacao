@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("teste");
+﻿using ExemploFundametos.Models;
+
+Pessoa p = new Pessoa
+{
+    Nome = "Leandro",
+    Idade = 44
+};
+
+p.Apresentar();
+
