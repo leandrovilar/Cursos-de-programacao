@@ -1,6 +1,25 @@
 ﻿using ExemploFundametos.Models;
 
 
+//Cast Implicito - conversao de diferentes tipos 
+//conversao automatica
+// int a = 5;
+// double b = a;
+//conversao automatica
+// int a = 5;
+// long b = 5;
+
+//erro long é maior que int
+long b = 5;
+int a = 5;
+
+
+
+
+
+
+Console.WriteLine(b);
+
 //Conversão para string
 int inteiro = 5;
 string a = inteiro.ToString();
