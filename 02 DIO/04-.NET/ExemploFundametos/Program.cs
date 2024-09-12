@@ -1,16 +1,21 @@
 ﻿using ExemploFundametos.Models;
 //// Operador condicional
 
-//Operador condicional na prática
+
+//if aninhado
 int quantidadeEmEstoque = 10;
 int quantidadeCompra = 4;
-bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
+bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
 
 Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
 Console.WriteLine($"Quantidade de compra: {quantidadeCompra}");
 Console.WriteLine($"É possível realizar a venda: {possivelVenda}");
 
-if (possivelVenda)
+if (quantidadeCompra == 0)
+{
+    Console.WriteLine("Venda invalida.");
+}
+else if (possivelVenda)
 {
     Console.WriteLine("Venda realizada.");
 }
@@ -20,15 +25,25 @@ else
 }
 
 
+//Operador condicional na prática
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 4;
+// bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
 
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade de compra: {quantidadeCompra}");
+// Console.WriteLine($"É possível realizar a venda: {possivelVenda}");
 
+// if (possivelVenda)
+// {
+//     Console.WriteLine("Venda realizada.");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe. Nao temos a quantidade desejada em estoque.");
+// }
 
-
-
-
-
-
-
+//_____________________________________________
 //Ordem dos operadores - (), xº,* ou /, + ou -
 // double a = 4 / (2+2);
 // Console.WriteLine(a);
