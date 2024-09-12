@@ -1,10 +1,22 @@
 ﻿using ExemploFundametos.Models;
 
-//Introdução operador atribuição
+//Combinando Operadores
 int a = 10;
 int b = 20;
 int c = a + b;
-Console.WriteLine(c);
+c = c + 5;
+c = c - 5;
+c += 5;
+c *= 5;
+
+//Introdução operador atribuição
+// int a = 10;
+// int b = 20;
+// int c = a + b;
+// Console.WriteLine(c);
+
+
+
 
 // DateTime dataAtual = DateTime.Now.AddDays(5);
 // Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
