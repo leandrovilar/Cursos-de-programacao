@@ -1,13 +1,20 @@
 ﻿using ExemploFundametos.Models;
 
+
+//Convertendo tipos de variáveis
+// Cast - Casting
+int a = Convert.ToInt32("5");
+int a = int.Parse("5");
+Console.WriteLine(a);
+
 //Combinando Operadores
-int a = 10;
-int b = 20;
-int c = a + b;
-c = c + 5;
-c = c - 5;
-c += 5;
-c *= 5;
+// int a = 10;
+// int b = 20;
+// int c = a + b;
+// c = c + 5;
+// c = c - 5;
+// c += 5;
+// c *= 5;
 
 //Introdução operador atribuição
 // int a = 10;
