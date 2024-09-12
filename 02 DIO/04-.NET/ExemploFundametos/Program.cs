@@ -1,26 +1,38 @@
 ﻿using ExemploFundametos.Models;
-//// Operador condicional
 
-//switch case
-Console.WriteLine("Digite uma letra");
-string letra = Console.ReadLine();
+////Operador logico
+//Operador OR ||
 
-switch (letra)
+bool ehMaiorDeIdade = true;
+bool possuiAutorizacaoDoResponsavel = false;
+if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)
 {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("Vogal");
-        break;
-    default:
-        Console.WriteLine("não é uma vocal");
-        break;
+    Console.WriteLine("Entrada Liberada!");
+}
+else{
+    Console.WriteLine("Entrada nao liberada");
 }
 
 
+//// Operador condicional
 
+//switch case
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine();
+
+// switch (letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("Vogal");
+//         break;
+//     default:
+//         Console.WriteLine("não é uma vocal");
+//         break;
+// }
 
 
 //if aninhado
@@ -147,4 +159,3 @@ switch (letra)
 //     Idade = 44
 // };
 // p.Apresentar();
-
