@@ -1,11 +1,17 @@
 ﻿using ExemploFundametos.Models;
 
 
+//Diferença entre Convert e Perse
+int a = Convert.ToInt32(null); // resultado 0 (zero)
+int a = int.Parse(null); // resultado unhandled exception (erro)
+Console.WriteLine(a);
+
+
 //Convertendo tipos de variáveis
 // Cast - Casting
-int a = Convert.ToInt32("5");
-int a = int.Parse("5");
-Console.WriteLine(a);
+// int a = Convert.ToInt32("5");
+// int a = int.Parse("5");
+// Console.WriteLine(a);
 
 //Combinando Operadores
 // int a = 10;
