@@ -1,32 +1,48 @@
 ﻿using ExemploFundametos.Models;
 
 ////Operador logico
-//Operador and &&
-bool possuiPresencaMinima = true;
-double media = 5.5;
 
-if (possuiPresencaMinima && media >= 7)
+//Operador NOT !
+
+bool chovel = false;
+bool estaTarde = false;
+
+if (!chovel && !estaTarde)
 {
-    Console.WriteLine("Aprovado!");
+    Console.WriteLine("Vou pedalar");
 }
 else
 {
-    Console.WriteLine("Reprovado");
+    Console.WriteLine("Vou pedalar um outro dia");
 }
+
+
+//Operador and &&
+// bool possuiPresencaMinima = true;
+// double media = 5.5;
+
+// if (possuiPresencaMinima && media >= 7)
+// {
+//     Console.WriteLine("Aprovado!");
+// }
+// else
+// {
+//     Console.WriteLine("Reprovado");
+// }
 
 
 
 //Operador OR ||
 
-bool ehMaiorDeIdade = true;
-bool possuiAutorizacaoDoResponsavel = false;
-if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)
-{
-    Console.WriteLine("Entrada Liberada!");
-}
-else{
-    Console.WriteLine("Entrada nao liberada");
-}
+// bool ehMaiorDeIdade = true;
+// bool possuiAutorizacaoDoResponsavel = false;
+// if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)
+// {
+//     Console.WriteLine("Entrada Liberada!");
+// }
+// else{
+//     Console.WriteLine("Entrada nao liberada");
+// }
 
 
 //// Operador condicional
