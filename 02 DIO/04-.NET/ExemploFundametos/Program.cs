@@ -1,5 +1,8 @@
 ﻿using ExemploFundametos.Models;
 
+//Ordem dos operadores - (), xº,* ou /, + ou -
+double a = 4 / (2+2);
+Console.WriteLine(a);
 
 //Cast Implicito - conversao de diferentes tipos 
 //conversao automatica
@@ -10,20 +13,16 @@
 // long b = 5;
 
 //erro long é maior que int
-long b = 5;
-int a = 5;
+// long b = 5;
+// int a = 5;
 
 
-
-
-
-
-Console.WriteLine(b);
+// Console.WriteLine(b);
 
 //Conversão para string
-int inteiro = 5;
-string a = inteiro.ToString();
-Console.WriteLine(a);
+//int inteiro = 5;
+//string a = inteiro.ToString();
+//Console.WriteLine(a);
 
 //Diferença entre Convert e Perse
 // int a = Convert.ToInt32(null); // resultado 0 (zero)
