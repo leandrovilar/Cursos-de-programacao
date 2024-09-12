@@ -1,6 +1,21 @@
 ﻿using ExemploFundametos.Models;
 
 ////Operador logico
+//Operador and &&
+bool possuiPresencaMinima = true;
+double media = 5.5;
+
+if (possuiPresencaMinima && media >= 7)
+{
+    Console.WriteLine("Aprovado!");
+}
+else
+{
+    Console.WriteLine("Reprovado");
+}
+
+
+
 //Operador OR ||
 
 bool ehMaiorDeIdade = true;
