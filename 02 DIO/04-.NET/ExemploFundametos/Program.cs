@@ -1,28 +1,49 @@
 ﻿using ExemploFundametos.Models;
 //// Operador condicional
 
+//switch case
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+
+switch (letra)
+{
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal");
+        break;
+    default:
+        Console.WriteLine("não é uma vocal");
+        break;
+}
+
+
+
+
 
 //if aninhado
-int quantidadeEmEstoque = 10;
-int quantidadeCompra = 4;
-bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 4;
+// bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
 
-Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
-Console.WriteLine($"Quantidade de compra: {quantidadeCompra}");
-Console.WriteLine($"É possível realizar a venda: {possivelVenda}");
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade de compra: {quantidadeCompra}");
+// Console.WriteLine($"É possível realizar a venda: {possivelVenda}");
 
-if (quantidadeCompra == 0)
-{
-    Console.WriteLine("Venda invalida.");
-}
-else if (possivelVenda)
-{
-    Console.WriteLine("Venda realizada.");
-}
-else
-{
-    Console.WriteLine("Desculpe. Nao temos a quantidade desejada em estoque.");
-}
+// if (quantidadeCompra == 0)
+// {
+//     Console.WriteLine("Venda invalida.");
+// }
+// else if (possivelVenda)
+// {
+//     Console.WriteLine("Venda realizada.");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe. Nao temos a quantidade desejada em estoque.");
+// }
 
 
 //Operador condicional na prática
