@@ -1,10 +1,15 @@
 ﻿using ExemploFundametos.Models;
 
 
-//Diferença entre Convert e Perse
-int a = Convert.ToInt32(null); // resultado 0 (zero)
-int a = int.Parse(null); // resultado unhandled exception (erro)
+//Conversão para string
+int inteiro = 5;
+string a = inteiro.ToString();
 Console.WriteLine(a);
+
+//Diferença entre Convert e Perse
+// int a = Convert.ToInt32(null); // resultado 0 (zero)
+// int a = int.Parse(null); // resultado unhandled exception (erro)
+// Console.WriteLine(a);
 
 
 //Convertendo tipos de variáveis
