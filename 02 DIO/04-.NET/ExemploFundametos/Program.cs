@@ -1,6 +1,7 @@
 ﻿using ExemploFundametos.Models;
 
 ////Operadores Aritméticos 
+//Calculadora
 Calculadora calc = new Calculadora();
 calc.Somar(10,20);
 calc.Subtrair(50,10);
