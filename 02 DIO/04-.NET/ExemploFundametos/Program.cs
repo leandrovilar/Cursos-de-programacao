@@ -1,21 +1,27 @@
 ﻿using ExemploFundametos.Models;
 
-////Operador logico
+////Operadores Aritméticos 
+Calculadora calc = new Calculadora();
+calc.Somar(10,20);
+calc.Subtrair(50,10);
+calc.Multiplicar(5,10);
+calc.Dividir(100,5);
 
+
+////Operador logico
 //Operador NOT !
 
-bool chovel = false;
-bool estaTarde = false;
+// bool chovel = false;
+// bool estaTarde = false;
 
-if (!chovel && !estaTarde)
-{
-    Console.WriteLine("Vou pedalar");
-}
-else
-{
-    Console.WriteLine("Vou pedalar um outro dia");
-}
-
+// if (!chovel && !estaTarde)
+// {
+//     Console.WriteLine("Vou pedalar");
+// }
+// else
+// {
+//     Console.WriteLine("Vou pedalar um outro dia");
+// }
 
 //Operador and &&
 // bool possuiPresencaMinima = true;
@@ -30,10 +36,7 @@ else
 //     Console.WriteLine("Reprovado");
 // }
 
-
-
 //Operador OR ||
-
 // bool ehMaiorDeIdade = true;
 // bool possuiAutorizacaoDoResponsavel = false;
 // if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)
