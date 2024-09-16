@@ -3,12 +3,17 @@
 ////Operadores Aritméticos 
 //Calculadora / Pontencia
 Calculadora calc = new Calculadora();
+calc.Seno(30);
+calc.Coseno(30);
+calc.Tangente(30);
+
+// calc.Potencia(3,3);
+
 // calc.Somar(10,20);
 // calc.Subtrair(50,10);
 // calc.Multiplicar(5,10);
 // calc.Dividir(100,5);
 
-calc.Potencia(3,3);
 
 
 
