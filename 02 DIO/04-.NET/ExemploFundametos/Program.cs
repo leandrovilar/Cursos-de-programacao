@@ -3,20 +3,23 @@
 ////Operadores Aritméticos 
 ///Calculadora / Pontencia
 Calculadora calc = new Calculadora();
+//Calculando raiz quadrada
+calc.RaizQuadrada(9);
+
 
 //Incremento e Decremento
-int numeroIncremento = 10;
-Console.WriteLine(numeroIncremento);
-Console.WriteLine("Incrementando o 10");
+// int numeroIncremento = 10;
+// Console.WriteLine(numeroIncremento);
+// Console.WriteLine("Incrementando o 10");
 //numeroIncremento = numeroIncremento + 1;
-numeroIncremento++;
-Console.WriteLine(numeroIncremento);
+// numeroIncremento++;
+// Console.WriteLine(numeroIncremento);
 
-int numeroDecremento = 20;
-Console.WriteLine(numeroDecremento);
-Console.WriteLine("Decrementando o 20");
-numeroDecremento--;
-Console.WriteLine(numeroDecremento);
+// int numeroDecremento = 20;
+// Console.WriteLine(numeroDecremento);
+// Console.WriteLine("Decrementando o 20");
+// numeroDecremento--;
+// Console.WriteLine(numeroDecremento);
 
 
 ///Funcoes trigonometricas
@@ -30,8 +33,6 @@ Console.WriteLine(numeroDecremento);
 // calc.Subtrair(50,10);
 // calc.Multiplicar(5,10);
 // calc.Dividir(100,5);
-
-
 
 
 ////Operador logico
