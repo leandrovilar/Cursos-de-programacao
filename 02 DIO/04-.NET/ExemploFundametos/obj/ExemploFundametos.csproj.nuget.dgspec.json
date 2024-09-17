@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj": {}
+    "C:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj": {
+    "C:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj",
         "projectName": "ExemploFundametos",
-        "projectPath": "c:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj",
+        "projectPath": "C:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\ExemploFundametos.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\obj\\",
+        "outputPath": "C:\\Users\\Leandro\\Desktop\\Front-End\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundametos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"

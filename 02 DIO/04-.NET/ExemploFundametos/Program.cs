@@ -1,13 +1,42 @@
-﻿using ExemploFundametos.Models;
+﻿using System.Runtime.Serialization;
+using ExemploFundametos.Models;
 
 ////Estruturas de repetição-----------------------------------------------------
-///Introdução ao FOR
-int numero = 5;
-for (int contador = 0; contador <= 10; contador++)
-{
-    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
-}
 
+///Introdução ao DO WHILE
+int soma = 0, numero = 0;
+do
+{
+    Console.WriteLine("Digite um número (0 para parar)");
+    numero = Convert.ToInt32(Console.ReadLine());
+    soma += numero;
+
+} while (numero != 0);
+Console.WriteLine($"Total de soma dos números digitados é: {soma}");
+
+
+///Introdução ao WHILE(enquanto)
+// int numero = 5;
+// int contador = 0;//1
+
+// while (contador <= 10)
+// {
+//     Console.WriteLine($"{contador + 1}° Execução {numero} x {contador} = {numero * contador}");
+//     contador++;
+//     //interrompendo o fluxo de execução
+//     if (contador == 5)
+//     {
+//         break;
+//     }
+// }
+
+
+///Introdução ao FOR(repetição)
+// int numero = 5;
+// for (int contador = 0; contador <= 10; contador++)
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+// }
 
 
 ////Operadores Aritméticos------------------------------------------------------ 

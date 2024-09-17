@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExemploFundametos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8dbc1266d0eaf3f1de9a164d51e6c1110f836a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63ade3564961ee3ff06864d2c91cd7a8519fe04e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExemploFundametos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExemploFundametos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
