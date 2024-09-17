@@ -1,10 +1,20 @@
 ﻿using ExemploFundametos.Models;
 
-////Operadores Aritméticos 
+////Estruturas de repetição-----------------------------------------------------
+///Introdução ao FOR
+int numero = 5;
+for (int contador = 0; contador <= 10; contador++)
+{
+    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+}
+
+
+
+////Operadores Aritméticos------------------------------------------------------ 
 ///Calculadora / Pontencia
-Calculadora calc = new Calculadora();
+// Calculadora calc = new Calculadora();
 //Calculando raiz quadrada
-calc.RaizQuadrada(9);
+// calc.RaizQuadrada(9);
 
 
 //Incremento e Decremento
