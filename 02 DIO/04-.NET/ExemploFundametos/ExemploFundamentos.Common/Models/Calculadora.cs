@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 ////Operadores Aritméticos 
 //Calculadora
 
-namespace ExemploFundametos.Models
+namespace ExemploFundamentos.Common.Models
 {
     public class Calculadora
     {

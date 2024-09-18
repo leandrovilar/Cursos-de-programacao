@@ -1,5 +1,5 @@
 ﻿using System.Runtime.Serialization;
-using ExemploFundametos.Models;
+//using ExemploFundamentos.common.Models;
 
 ////Estruturas de repetição-----------------------------------------------------
 ///Construindo um menu interativo
