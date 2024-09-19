@@ -3,7 +3,7 @@ using System.Runtime.InteropServices.Marshalling;
 using System.Runtime.Serialization;
 using ExemploFundamentos.Common.Models;
 
-////Array
+////Array-------------------------------------------------------------------------------
 ///Trabalhando com listas
 List<string> listaString = new List<string>();
 listaString.Add("DF");
