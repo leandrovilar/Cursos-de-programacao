@@ -1,18 +1,29 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Runtime.InteropServices.Marshalling;
+using System.Runtime.Serialization;
 using ExemploFundamentos.Common.Models;
 
 ////Array
-///Array de inteiros
+///Acessando um índice inválido
+
+
+///Implementando um array de inteiros
 int [] arrayInteiros = new int[3];
 arrayInteiros[0] = 72;
 arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
 
+//Percorrendo Array com o FOR
 for (int contador = 0; contador < arrayInteiros.Length; contador++)
 {
     Console.WriteLine($"Posição n° {contador} - {arrayInteiros[contador]}");
 }
 
+//Percorrendo Array com o FOREACH
+int contadorForeach = 0;
+foreach (int valor in arrayInteiros)
+{
+    Console.WriteLine($"Posição n° {contadorForeach} - {valor}");
+}
 
 
 
