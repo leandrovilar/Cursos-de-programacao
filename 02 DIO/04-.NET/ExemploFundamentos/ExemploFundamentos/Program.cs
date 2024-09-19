@@ -12,6 +12,9 @@ arrayInteiros[0] = 72;
 arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
 
+//Redimensionando um Array
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
 //Percorrendo Array com o FOR
 for (int contador = 0; contador < arrayInteiros.Length; contador++)
 {
