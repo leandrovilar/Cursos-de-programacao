@@ -1,16 +1,34 @@
-﻿using System.Runtime.InteropServices.Marshalling;
+﻿using System.IO.Compression;
+using System.Runtime.InteropServices.Marshalling;
 using System.Runtime.Serialization;
 using ExemploFundamentos.Common.Models;
 
 ////Array
-///Acessando um índice inválido
+///Trabalhando com listas
+List<string> listaString = new List<string>();
+listaString.Add("DF");
+listaString.Add("GO");
+listaString.Add("PE");
+listaString.Add("CE");
+listaString.Add("RJ");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Add("CA");
+
+Console.WriteLine($"Itens na mianha lista: {listaString.Count } - Capacidade: {listaString.Capacity}");
+
+listaString.Remove("GO");
+
+Console.WriteLine($"Itens na mianha lista: {listaString.Count } - Capacidade: {listaString.Capacity}");
+
 
 
 ///Implementando um array de inteiros
-int [] arrayInteiros = new int[3];
-arrayInteiros[0] = 72;
-arrayInteiros[1] = 64;
-arrayInteiros[2] = 50;
+// int [] arrayInteiros = new int[3];
+// arrayInteiros[0] = 72;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
 
 //Copiando um Array para outro
 //int [] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
@@ -19,17 +37,17 @@ arrayInteiros[2] = 50;
 //Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
 
 //Percorrendo Array com o FOR
-for (int contador = 0; contador < arrayInteiros.Length; contador++)
-{
-    Console.WriteLine($"Posição n° {contador} - {arrayInteiros[contador]}");
-}
+// for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posição n° {contador} - {arrayInteiros[contador]}");
+// }
 
 //Percorrendo Array com o FOREACH
-int contadorForeach = 0;
-foreach (int valor in arrayInteiros)
-{
-    Console.WriteLine($"Posição n° {contadorForeach} - {valor}");
-}
+// int contadorForeach = 0;
+// foreach (int valor in arrayInteiros)
+// {
+//     Console.WriteLine($"Posição n° {contadorForeach} - {valor}");
+// }
 
 
 
