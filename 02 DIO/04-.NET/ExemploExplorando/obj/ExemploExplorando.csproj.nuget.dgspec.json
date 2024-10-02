@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {}
+    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
-        "projectName": "ExemploFundamentos.Common",
-        "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectName": "ExemploExplorando",
+        "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
+        "outputPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"

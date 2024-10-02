@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {}
+    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
         "projectName": "ExemploFundamentos.Common",
-        "projectPath": "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+        "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
+        "outputPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {
+    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
         "projectName": "ExemploFundamentos",
-        "projectPath": "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
+        "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\obj\\",
+        "outputPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
-                "projectPath": "c:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj"
+              "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+                "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj"
               }
             }
           }

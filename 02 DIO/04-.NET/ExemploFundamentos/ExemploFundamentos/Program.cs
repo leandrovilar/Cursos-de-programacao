@@ -3,8 +3,32 @@ using System.Runtime.InteropServices.Marshalling;
 using System.Runtime.Serialization;
 using ExemploFundamentos.Common.Models;
 
-////Array-------------------------------------------------------------------------------
+
+////Comentários e Boas Práticas em C#-------------------------------------------
+
+//Pessoa p1 = new Pessoa();
+
+/*
+Atribui o nome e idade para pessoa
+passando o nome Leandro
+e passand a idade 44
+*/
+/*
+p1.Nome = "Leandro";
+p1.Idade = 44;
+
+//Faz a pessa se apresentar
+p1.Apresentar();
+
+Calculadora c = new Calculadora();
+c.Somar(5,5); 
+*/
+
+
+
+////Array-----------------------------------------------------------------------
 ///Trabalhando com listas
+/*
 List<string> listaString = new List<string>();
 listaString.Add("DF");
 listaString.Add("GO");
@@ -21,8 +45,7 @@ Console.WriteLine($"Itens na mianha lista: {listaString.Count } - Capacidade: {l
 listaString.Remove("GO");
 
 Console.WriteLine($"Itens na mianha lista: {listaString.Count } - Capacidade: {listaString.Capacity}");
-
-
+*/
 
 ///Implementando um array de inteiros
 // int [] arrayInteiros = new int[3];
