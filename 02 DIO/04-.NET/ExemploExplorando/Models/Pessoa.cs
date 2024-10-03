@@ -26,6 +26,9 @@ namespace ExemploExplorando.Models
                 _nome = value;
             }
         }
+        public string Sobrenome { get; set; }
+
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
         public int Idade
         {
             //Body Expressions
@@ -42,7 +45,7 @@ namespace ExemploExplorando.Models
 
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e eu tenho {Idade} anos.");
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e eu tenho {Idade} anos.");
         }
     }
 }

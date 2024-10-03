@@ -6,7 +6,8 @@ Pessoa p1 = new Pessoa();
 
 // Atribuindo valores às propriedades
 p1.Nome = "Leandro";
-p1.Idade = 0;
+p1.Sobrenome = "Vilar";
+p1.Idade = 44;
 
 // Chamando o método Apresentar
 p1.Apresentar();
