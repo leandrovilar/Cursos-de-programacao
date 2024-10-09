@@ -33,7 +33,8 @@ namespace ExemploExplorando.Models
         //Metodo listar alunos
         public void ListarAlunos()
         {
-            foreach(Pessoa aluno in Alunos)
+            Console.WriteLine($"Alunos do curso de {Nome}");
+            foreach (Pessoa aluno in Alunos)
             {
                 Console.WriteLine(aluno.NomeCompleto);
             }
