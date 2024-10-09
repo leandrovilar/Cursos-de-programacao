@@ -12,10 +12,31 @@ namespace ExemploExplorando.Models
         public string Nome { get; set; }
         public List<Pessoa> Alunos { get; set; }
 
-        //Metodo
+        //Metodo adicionar alunos
         public void AdicionarAluno(Pessoa aluno)
         {
             Alunos.Add(aluno);
+        }
+        //Metodo contar alunos
+        public int ObterQuantidadeDeAlunosMatriculados()
+        {
+            int quantidade = Alunos.Count;
+            return quantidade;
+        }
+
+        //Metodo Remover Alunos
+        public bool RemoverAluno(Pessoa aluno)
+        {
+            return Alunos.Remove(aluno);
+        }
+
+        //Metodo listar alunos
+        public void ListarAlunos()
+        {
+            foreach(Pessoa aluno in Alunos)
+            {
+                Console.WriteLine(aluno.NomeCompleto);
+            }
         }
     }
 }
