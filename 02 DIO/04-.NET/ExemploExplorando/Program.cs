@@ -1,11 +1,8 @@
 ﻿using ExemploExplorando.Models; // Certifique-se de incluir a namespace correta
 
 
-// Instanciando a classe Pessoa
-Pessoa p1 = new Pessoa();
-// Atribuindo valores às propriedades
-p1.Nome = "Leandro";
-p1.Sobrenome = "Vilar";
+// Instanciando a classe Pessoa usando um Construdor
+Pessoa p1 = new Pessoa(nome: "Leandro", sobrenome: "Vilar");
 
 // Instanciando a classe Pessoa
 Pessoa p2 = new Pessoa();
@@ -16,6 +13,8 @@ p2.Sobrenome = "Vilar";
 // Instanciando a classe Curso
 Curso cursoDeIngles = new Curso();
 cursoDeIngles.Nome = "Ingles";
+
+// Inicializando a lista de alunos
 cursoDeIngles.Alunos = new List<Pessoa>();
 
 //Metodo adicionar aluno
