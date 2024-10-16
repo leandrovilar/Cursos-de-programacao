@@ -2,12 +2,21 @@
 
 
 //Concatenação de valores
-int numero1 = 10;
-int numero2 = 20;
+decimal valorMonetario = 1980.00m;
+Console.WriteLine($"{valorMonetario:C}");
 
-int resultado = numero1 + numero2;
 
-Console.WriteLine(resultado);
+
+
+
+
+
+// //Concatenação de valores
+// int numero1 = 10;
+// int numero2 = 20;
+
+// int resultado = numero1 + numero2;
+// Console.WriteLine(resultado);
 
 
 
