@@ -6,9 +6,11 @@ using System.Globalization; //Alterando a localização do código
 
 ////Concatenação de valores
 //decimal valorMonetario = 1980.00m;
-double porcentagem = .3421;
+//double porcentagem = .3421;
 
-Console.WriteLine(porcentagem.ToString("p"));
+////Formatação personalizada
+//Console.WriteLine(porcentagem.ToString("p"));
+
 ////Formatação personalizada N ou C
 //Console.WriteLine(valorMonetario.ToString("N2"));
 
