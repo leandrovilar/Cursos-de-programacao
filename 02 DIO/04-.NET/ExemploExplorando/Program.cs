@@ -1,16 +1,16 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization; //Alterando a localização do código
 
-
-
-//Alterando a localização do código
+////Alterando a localização do código
 //CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-us") //Modo 01
 
-//Concatenação de valores
-decimal valorMonetario = 1980.00m;
+////Concatenação de valores
+//decimal valorMonetario = 1980.00m;
+double porcentagem = .3421;
 
-//Formatação personalizada N ou C
-Console.WriteLine(valorMonetario.ToString("N2"));
+Console.WriteLine(porcentagem.ToString("p"));
+////Formatação personalizada N ou C
+//Console.WriteLine(valorMonetario.ToString("N2"));
 
 //Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));//Modo 02
 
