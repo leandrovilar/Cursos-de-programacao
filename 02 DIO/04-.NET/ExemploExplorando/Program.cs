@@ -1,9 +1,16 @@
 ﻿using ExemploExplorando.Models;
+using System.Globalization; //Alterando a localização do código
 
+
+
+//Alterando a localização do código
+//CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-us") //Modo 01
 
 //Concatenação de valores
 decimal valorMonetario = 1980.00m;
-Console.WriteLine($"{valorMonetario:C}");
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));//Modo 02
+
+//Console.WriteLine($"{valorMonetario:C}");//Modo 01
 
 
 
