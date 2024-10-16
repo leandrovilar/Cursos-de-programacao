@@ -8,7 +8,11 @@ using System.Globalization; //Alterando a localização do código
 
 //Concatenação de valores
 decimal valorMonetario = 1980.00m;
-Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));//Modo 02
+
+//Formatação personalizada N ou C
+Console.WriteLine(valorMonetario.ToString("N2"));
+
+//Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));//Modo 02
 
 //Console.WriteLine($"{valorMonetario:C}");//Modo 01
 
