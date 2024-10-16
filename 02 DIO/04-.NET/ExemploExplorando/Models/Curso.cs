@@ -32,15 +32,19 @@ namespace ExemploExplorando.Models
 
         //Metodo listar alunos
         public void ListarAlunos()
-        //Concatenando string
         {
             Console.WriteLine($"Alunos do curso de {Nome}");
             for (int count = 0; count < Alunos.Count; count++)
             {
-                string texto = "N° " + count + " - " + Alunos[count].NomeCompleto;
+                //Concatenando string
+                //string texto = "N° " + count + " - " + Alunos[count].NomeCompleto;
+
+                //Interpolacao de string
+                string texto = $"N° {count} - {Alunos[count].NomeCompleto}";
+
                 Console.WriteLine(texto);
             }
-            
+
         }
     }
 
