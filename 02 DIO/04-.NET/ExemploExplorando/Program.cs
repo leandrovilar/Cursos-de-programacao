@@ -1,6 +1,40 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization; //Alterando a localização do código
 
+
+
+
+
+
+
+
+
+
+
+
+// //Formato de data e hora
+// DateTime data = DateTime.Now;
+// Console.WriteLine(data.ToString("dd-MM-dd HH:mm"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ////Alterando a localização do código
 //CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-us") //Modo 01
 
