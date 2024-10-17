@@ -1,7 +1,37 @@
 ﻿using ExemploExplorando.Models;
+using System.Data;
 using System.Globalization; //Alterando a localização do código
 
 
+//TryParseExact
+string dataString = "2024-10-16 21:29";
+
+bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+
+if (sucesso)
+{
+    Console.WriteLine($"Conversao com sucesso! Data: {data}");
+}
+else
+{
+    Console.WriteLine($"{dataString} não é uma data válida");
+}
+
+
+
+
+
+
+
+// DateTime data = DateTime.Now;
+// //Só data
+// Console.WriteLine(data.ToShortDateString());
+// //Só hora
+// Console.WriteLine(data.ToShortTimeString());
+
+
+// DateTime data = DateTime.Parse("30/10/2022 21:00");
+// Console.WriteLine(data);
 
 
 
@@ -10,9 +40,7 @@ using System.Globalization; //Alterando a localização do código
 
 
 
-
-
-// //Formato de data e hora
+// //Formatando o tipo DateTime
 // DateTime data = DateTime.Now;
 // Console.WriteLine(data.ToString("dd-MM-dd HH:mm"));
 
