@@ -3,19 +3,39 @@ using System.Data;
 using System.Globalization; //Alterando a localização do código
 
 
-//TryParseExact
-string dataString = "2024-10-16 21:29";
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
-bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+foreach(string linha in linhas)
+{
+    Console.WriteLine(linha);
+}
 
-if (sucesso)
-{
-    Console.WriteLine($"Conversao com sucesso! Data: {data}");
-}
-else
-{
-    Console.WriteLine($"{dataString} não é uma data válida");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //TryParseExact
+// string dataString = "2024-10-16 21:29";
+
+// bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+
+// if (sucesso)
+// {
+//     Console.WriteLine($"Conversao com sucesso! Data: {data}");
+// }
+// else
+// {
+//     Console.WriteLine($"{dataString} não é uma data válida");
+// }
 
 
 
