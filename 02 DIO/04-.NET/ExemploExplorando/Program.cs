@@ -2,9 +2,10 @@
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
+//tratamento de exceção
 try
 {
-    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
     foreach (string linha in linhas)
     {
@@ -23,8 +24,11 @@ catch (Exception ex)
 {
     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
 }
-
-
+//Bloco finally (sempre aparece no final de um execução de código)
+finally
+{
+    Console.WriteLine("Chegou até aqui");
+}
 
 
 
