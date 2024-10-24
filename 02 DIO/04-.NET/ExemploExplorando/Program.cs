@@ -3,7 +3,44 @@ using ExemploExplorando.Models;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
-new ExemploExcecao().Metodo1();
+//Dictionary
+Dictionary<string, string> estados = new Dictionary<string, string>();
+//adicionar valor
+estados.Add("SP", "SÃO PAULO");
+estados.Add("DF", "DISTRITO FEDERAL");
+estados.Add("BA", "BAHIA");
+
+// //Acessar valor
+// Console.WriteLine(estados["DF"]);
+
+foreach(var item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+// //Remover valor
+// estados.Remove("BA");
+
+// //Mudar valor
+// estados["SP"] = "São Paulo - é uma Estado rico";
+
+// foreach(var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+//verificando valor
+string chave = "BA";
+Console.WriteLine($"verificando o elemento: {chave}");
+
+if (estados.ContainsKey(chave))
+{
+    Console.WriteLine($"Valor existente: {chave}");
+}
+else
+{
+    Console.WriteLine($"Valor não existe: {chave}");
+}
 
 
 
@@ -23,9 +60,75 @@ new ExemploExcecao().Metodo1();
 
 
 
+// //Pilha 
+// Stack<int> pilha = new Stack<int>();
+
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+
+// pilha.Push(20);
+
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Filas 
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+// fila.Enqueue(10);
+
+// foreach(int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+// //fila.Dequeue();
+// //Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+
+// fila.Enqueue(5);
+
+// foreach(int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+
+
+
+
+
+
+
+
+//new ExemploExcecao().Metodo1();
 
 // //tratamento de exceção
 // try

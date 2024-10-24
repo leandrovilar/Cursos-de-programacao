@@ -1,8 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+//Usando o Throw
 namespace ExemploExplorando
 {
     public class ExemploExcecao
@@ -28,6 +30,7 @@ namespace ExemploExplorando
         }
         public void Metodo4()
         {
+            //throw
             throw new Exception("Ocorreu uma exceção");
         }
 
