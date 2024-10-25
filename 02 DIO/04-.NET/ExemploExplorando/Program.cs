@@ -3,13 +3,30 @@ using ExemploExplorando.Models;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
-//Tublas
-(int, string, string, decimal) tupla = (1, "Leandro", "Vilar", 1.83m);
 
-Console.WriteLine($"Id: {tupla.Item1}");
-Console.WriteLine($"Nome: {tupla.Item2}");
-Console.WriteLine($"Sobrenome: {tupla.Item3}");
-Console.WriteLine($"Altura: {tupla.Item4}");
+//Tublas 01 - padrão
+(int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Leandro", "Braga", 1.83m);
+//Tublas 02 
+ValueTuple<int, string, string, decimal> tupla2 = (1, "Leandro", "Vilar", 1.83m);
+//Tublas 03
+var tubla3 = Tuple.Create(1, "Leandro", "Vilar", 1.83m);
+
+Console.WriteLine($"Id: {tupla.Id}");
+Console.WriteLine($"Nome: {tupla.Nome}");
+Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
+Console.WriteLine($"Altura: {tupla.Altura}");
+
+
+
+
+
+// //Tublas
+// (int, string, string, decimal) tupla = (1, "Leandro", "Vilar", 1.83m);
+
+// Console.WriteLine($"Id: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}");
 
 
 
