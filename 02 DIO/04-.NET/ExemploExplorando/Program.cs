@@ -3,44 +3,67 @@ using ExemploExplorando.Models;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
-//Dictionary
-Dictionary<string, string> estados = new Dictionary<string, string>();
-//adicionar valor
-estados.Add("SP", "SÃO PAULO");
-estados.Add("DF", "DISTRITO FEDERAL");
-estados.Add("BA", "BAHIA");
+//Tublas
+(int, string, string, decimal) tupla = (1, "Leandro", "Vilar", 1.83m);
 
-// //Acessar valor
-// Console.WriteLine(estados["DF"]);
+Console.WriteLine($"Id: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}");
 
-foreach(var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
 
-// //Remover valor
-// estados.Remove("BA");
 
-// //Mudar valor
-// estados["SP"] = "São Paulo - é uma Estado rico";
+
+
+
+
+
+
+
+
+
+
+// //Dictionary
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+// //adicionar valor
+// estados.Add("SP", "SÃO PAULO");
+// estados.Add("DF", "DISTRITO FEDERAL");
+// estados.Add("BA", "BAHIA");
+
+// // //Acessar valor
+// // Console.WriteLine(estados["DF"]);
 
 // foreach(var item in estados)
 // {
 //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 // }
 
-//verificando valor
-string chave = "BA";
-Console.WriteLine($"verificando o elemento: {chave}");
+// // //Remover valor
+// // estados.Remove("BA");
 
-if (estados.ContainsKey(chave))
-{
-    Console.WriteLine($"Valor existente: {chave}");
-}
-else
-{
-    Console.WriteLine($"Valor não existe: {chave}");
-}
+// // //Mudar valor
+// // estados["SP"] = "São Paulo - é uma Estado rico";
+
+// // foreach(var item in estados)
+// // {
+// //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// // }
+
+// //verificando valor
+// string chave = "BA";
+// Console.WriteLine($"verificando o elemento: {chave}");
+
+// if (estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"Valor existente: {chave}");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor não existe: {chave}");
+// }
+
+
+
 
 
 
