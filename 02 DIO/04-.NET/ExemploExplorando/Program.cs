@@ -6,9 +6,19 @@ using System.Globalization; //Alterando a localização do código
 int numero = 10;
 bool ehPar = false;
 
-//IF Ternário
+//Formato IF Ternário
 ehPar = numero % 2 == 0;
 Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
+
+// //Formato padrão
+// if (numero % 2 == 0)
+// {
+//     Console.WriteLine($"O número {numero} é par");
+//     }
+// else
+// {
+//     Console.WriteLine($"O número {numero} é impar");
+// }
 
 
 
@@ -34,23 +44,23 @@ Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
 
 
 
-// LeituraArquivo arquivo = new LeituraArquivo();
+LeituraArquivo arquivo = new LeituraArquivo();
 
-// //_ (andeline) serve para retirar uma informacao que nao for usar
-// var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+//_ (andeline) serve para retirar uma informacao que nao for usar
+var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
-// if (sucesso)
-// {
-//     //Console.WriteLine("Quantidade linhas do arquivo:" + quantidadeLinhas);
-//     foreach (string linha in linhasArquivo)
-//     {
-//         Console.WriteLine(linha);
-//     }
-// }
-// else
-// {
-//     Console.WriteLine("Não foi possível ler o arquivo");
-// }
+if (sucesso)
+{
+    //Console.WriteLine("Quantidade linhas do arquivo:" + quantidadeLinhas);
+    foreach (string linha in linhasArquivo)
+    {
+        Console.WriteLine(linha);
+    }
+}
+else
+{
+    Console.WriteLine("Não foi possível ler o arquivo");
+}
 
 
 
