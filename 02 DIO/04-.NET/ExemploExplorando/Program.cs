@@ -6,10 +6,10 @@ using System.Globalization; //Alterando a localização do código
 
 //Tublas 01 - padrão
 (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Leandro", "Braga", 1.83m);
-//Tublas 02 
-ValueTuple<int, string, string, decimal> tupla2 = (1, "Leandro", "Vilar", 1.83m);
-//Tublas 03
-var tubla3 = Tuple.Create(1, "Leandro", "Vilar", 1.83m);
+// //Tublas 02 
+// ValueTuple<int, string, string, decimal> tupla2 = (1, "Leandro", "Vilar", 1.83m);
+// //Tublas 03
+// var tubla3 = Tuple.Create(1, "Leandro", "Vilar", 1.83m);
 
 Console.WriteLine($"Id: {tupla.Id}");
 Console.WriteLine($"Nome: {tupla.Nome}");
