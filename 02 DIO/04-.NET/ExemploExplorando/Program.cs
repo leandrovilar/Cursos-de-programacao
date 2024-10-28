@@ -5,11 +5,12 @@ using System.Globalization; //Alterando a localização do código
 
 LeituraArquivo arquivo = new LeituraArquivo();
 
-var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+//_ (andeline) serve para retirar uma informacao que nao for usar
+var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
 if (sucesso)
 {
-    Console.WriteLine("Quantidade linhas do arquivo:" + quantidadeLinhas);
+    //Console.WriteLine("Quantidade linhas do arquivo:" + quantidadeLinhas);
     foreach (string linha in linhasArquivo)
     {
         Console.WriteLine(linha);
