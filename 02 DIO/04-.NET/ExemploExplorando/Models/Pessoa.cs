@@ -5,13 +5,20 @@ namespace ExemploExplorando.Models
     public class Pessoa
     {
         //Construdor
-        public Pessoa() {}
+        public Pessoa() { }
 
         //Construtor com implementação
         public Pessoa(string nome, string sobrenome)
         {
             Nome = nome;
             Sobrenome = sobrenome;
+        }
+
+        //Desconstrutor
+        public void deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
         }
 
         private string _nome;
