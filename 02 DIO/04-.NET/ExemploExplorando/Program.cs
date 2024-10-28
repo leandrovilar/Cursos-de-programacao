@@ -3,11 +3,23 @@ using ExemploExplorando.Models;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
-Pessoa p1 = new Pessoa("Leandro", "Vilar");
+int numero = 10;
+bool ehPar = false;
 
-(string nome, string sobrenome) = p1;
+//IF Ternário
+ehPar = numero % 2 == 0;
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
 
-Console.WriteLine($"{nome} {nobrenome}");
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Leandro", "Vilar");
+// (string nome, string sobrenome) = p1;
+// Console.WriteLine($"{nome} {sobrenome}");
 
 
 
