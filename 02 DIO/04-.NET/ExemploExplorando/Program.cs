@@ -1,14 +1,39 @@
 ﻿using ExemploExplorando;
 using ExemploExplorando.Models;
+using Newtonsoft.Json;
+using System.ComponentModel;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
-int numero = 10;
-bool ehPar = false;
+//Instanciar
+Venda v1 = new Venda(1, "Material de escritório", 25.00M);
 
-//Formato IF Ternário
-ehPar = numero % 2 == 0;
-Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
+//Serealizando com o Json
+string serializando = JsonConvert.SerializeObject(v1, Formatting.Indented);
+
+//Criando arquivo serializado
+File.WriteAllText("Arquivos/vendas.json", serializando);
+
+Console.WriteLine(serializando);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int numero = 10;
+// bool ehPar = false;
+
+// //Formato IF Ternário
+// ehPar = numero % 2 == 0;
+// Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
 
 // //Formato padrão
 // if (numero % 2 == 0)
@@ -44,23 +69,23 @@ Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
 
 
 
-LeituraArquivo arquivo = new LeituraArquivo();
+// LeituraArquivo arquivo = new LeituraArquivo();
 
-//_ (andeline) serve para retirar uma informacao que nao for usar
-var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+// //_ (andeline) serve para retirar uma informacao que nao for usar
+// var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
-if (sucesso)
-{
-    //Console.WriteLine("Quantidade linhas do arquivo:" + quantidadeLinhas);
-    foreach (string linha in linhasArquivo)
-    {
-        Console.WriteLine(linha);
-    }
-}
-else
-{
-    Console.WriteLine("Não foi possível ler o arquivo");
-}
+// if (sucesso)
+// {
+//     //Console.WriteLine("Quantidade linhas do arquivo:" + quantidadeLinhas);
+//     foreach (string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo");
+// }
 
 
 

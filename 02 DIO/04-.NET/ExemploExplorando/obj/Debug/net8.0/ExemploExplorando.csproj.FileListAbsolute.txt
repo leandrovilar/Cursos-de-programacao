@@ -13,3 +13,6 @@ C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\Exem
 C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
 C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
+C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.AssemblyReference.cache
+C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\obj\Debug\net8.0\ExemploE.B7F01285.Up2Date
