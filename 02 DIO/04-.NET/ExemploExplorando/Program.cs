@@ -5,11 +5,18 @@ using System.ComponentModel;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
-//Instanciar
+//Lista de vendas
+List<Venda> listaVenda = new List<Venda>();
+
+//Instanciar de vendas
 Venda v1 = new Venda(1, "Material de escritório", 25.00M);
+Venda v2 = new Venda(2, "Material de cozinha", 125.00M);
+
+listaVenda.Add(v1);
+listaVenda.Add(v2);
 
 //Serealizando com o Json
-string serializando = JsonConvert.SerializeObject(v1, Formatting.Indented);
+string serializando = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
 
 //Criando arquivo serializado
 File.WriteAllText("Arquivos/vendas.json", serializando);
