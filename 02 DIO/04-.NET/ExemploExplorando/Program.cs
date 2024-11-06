@@ -5,26 +5,64 @@ using System.ComponentModel;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
-//Data de venda
-DateTime dataAtual = DateTime.Now;
 
-//Lista de vendas
-List<Venda> listaVenda = new List<Venda>();
+//DESERIALIZANDO UM OBJETO
+String conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 
-//Instanciar de vendas
-Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
-Venda v2 = new Venda(2, "Material de cozinha", 125.00M, dataAtual);
+List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
 
-listaVenda.Add(v1);
-listaVenda.Add(v2);
+foreach (Venda venda in listaVenda)
+{
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+}
 
-//Serealizando com o Json
-string serializando = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
 
-//Criando arquivo serializado
-File.WriteAllText("Arquivos/vendas.json", serializando);
 
-Console.WriteLine(serializando);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //SERIALIZANDO OBJETO
+// //Data de venda
+// DateTime dataAtual = DateTime.Now;
+
+// //Lista de vendas
+// List<Venda> listaVenda = new List<Venda>();
+
+// //Instanciar de vendas
+// Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
+// Venda v2 = new Venda(2, "Material de cozinha", 125.00M, dataAtual);
+
+// listaVenda.Add(v1);
+// listaVenda.Add(v2);
+
+// //Serealizando com o Json
+// string serializando = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
+
+// //Criando arquivo serializado
+// File.WriteAllText("Arquivos/vendas.json", serializando);
+
+// Console.WriteLine(serializando);
+
+
+
+
+
+
+
+
 
 
 
