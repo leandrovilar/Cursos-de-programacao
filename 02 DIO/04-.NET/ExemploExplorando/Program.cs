@@ -6,15 +6,44 @@ using System.Data;
 using System.Globalization; //Alterando a localização do código
 
 
-//DESERIALIZANDO UM OBJETO
-String conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 
-List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+bool? desejaReceberEmail = null;
 
-foreach (Venda venda in listaVenda)
+if (desejaReceberEmail.HasValue && desejaReceberEmail.Value)
 {
-    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+    Console.WriteLine("O usuário optou por receber e-mail.");
 }
+else
+{
+    Console.WriteLine("O usuário não respondeu ou optou por não receber e-mail");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //DESERIALIZANDO UM OBJETO
+// String conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+
+// List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// foreach (Venda venda in listaVenda)
+// {
+//     Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+// }
 
 
 
