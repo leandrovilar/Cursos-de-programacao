@@ -5,18 +5,40 @@ using System.ComponentModel;
 using System.Data;
 using System.Globalization; //Alterando a localização do código
 
+//Tipos nulos com propriedade
+String conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 
+List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
 
-bool? desejaReceberEmail = null;
-
-if (desejaReceberEmail.HasValue && desejaReceberEmail.Value)
+foreach (Venda venda in listaVenda)
 {
-    Console.WriteLine("O usuário optou por receber e-mail.");
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, " +
+    $" Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}," + 
+    $"{(venda.Desconto.HasValue ? $"Desconto de: {venda.Desconto}" : "")}" );
 }
-else
-{
-    Console.WriteLine("O usuário não respondeu ou optou por não receber e-mail");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+// //Tipos nulos
+// bool? desejaReceberEmail = null;
+
+// if (desejaReceberEmail.HasValue && desejaReceberEmail.Value)
+// {
+//     Console.WriteLine("O usuário optou por receber e-mail.");
+// }
+// else
+// {
+//     Console.WriteLine("O usuário não respondeu ou optou por não receber e-mail");
+// }
 
 
 
