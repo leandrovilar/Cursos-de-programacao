@@ -3,19 +3,70 @@ using ExemploExplorando.Models;
 using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Data;
-using System.Globalization; //Alterando a localização do código
+using System.Globalization;
+using System.Reflection; //Alterando a localização do código
 
-//Tipos nulos com propriedade
-String conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+//Tipos anonimos em colecao
+// Carrega o conteúdo do arquivo JSON em uma string
+string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 
+// Deserializa o conteúdo JSON em uma lista de objetos do tipo Venda
+// Isso converte o JSON em uma lista de instâncias da classe Venda
 List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
 
-foreach (Venda venda in listaVenda)
+// Cria uma nova lista com objetos anônimos usando LINQ
+// Aqui, estamos selecionando apenas as propriedades "Produto" e "Preco" da lista de vendas
+// O tipo anônimo { Produto, Preco } é útil quando precisamos de apenas algumas propriedades dos objetos da lista
+var ListaAnonimo = listaVenda.Select(x => new { x.Produto, x.Preco });
+
+// Percorre a lista de objetos anônimos e exibe os dados no console
+foreach (var venda in ListaAnonimo)
 {
-    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, " +
-    $" Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}," + 
-    $"{(venda.Desconto.HasValue ? $"Desconto de: {venda.Desconto}" : "")}" );
+    // Imprime o nome do produto e o preço formatado
+    Console.WriteLine($"Produto: {venda.Produto}, Preço: {venda.Preco} ");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //Tipo anônimo 
+// var tipoAnonimo = new { Nome = "Leandro", Sobrenome = "Braga", Altura = 1.80};
+
+// Console.WriteLine("Nome: " + tipoAnonimo.Nome);
+// Console.WriteLine("Sobrenome: " + tipoAnonimo.Sobrenome);
+// Console.WriteLine("Altura: " + tipoAnonimo.Altura);
+
+
+
+
+
+
+
+
+
+
+
+
+// //Tipos nulos com propriedade
+// String conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+
+// List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// foreach (Venda venda in listaVenda)
+// {
+//     Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, " +
+//     $" Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}," + 
+//     $"{(venda.Desconto.HasValue ? $"Desconto de: {venda.Desconto}" : "")}" );
+// }
 
 
 

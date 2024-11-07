@@ -1,4 +1,6 @@
 using System.Collections.Specialized;
+using System.Reflection;
+using System.Reflection.Metadata;
 
 namespace ExemploExplorando.Models
 {
@@ -8,10 +10,11 @@ namespace ExemploExplorando.Models
         public Pessoa() { }
 
         //Construtor com implementação
-        public Pessoa(string nome, string sobrenome)
+        public Pessoa(string nome, string sobrenome, decimal altura)
         {
             Nome = nome;
             Sobrenome = sobrenome;
+            Altura = altura;
         }
 
         //Desconstrutor
@@ -19,6 +22,8 @@ namespace ExemploExplorando.Models
         {
             nome = Nome;
             sobrenome = Sobrenome;
+            //erro
+            //altura = Altura; 
         }
 
         private string _nome;
@@ -46,8 +51,8 @@ namespace ExemploExplorando.Models
             }
         }
         public string Sobrenome { get; set; }
-
         public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+        public decimal Altura { get; set; }
         public int Idade
         {
             //Body Expressions
