@@ -7,30 +7,30 @@ using System.Globalization;
 using System.Reflection; //Alterando a localização do código
 
 
-//Tipo variavel dinâmica
-// Declara uma variável dinâmica chamada 'variavelDinamica' e atribui a ela um valor inteiro (4)
-// 'dynamic' permite que o tipo da variável seja resolvido em tempo de execução, não em tempo de compilação
-dynamic variavelDinamica = 4;
+// //Tipo variavel dinâmica
+// // Declara uma variável dinâmica chamada 'variavelDinamica' e atribui a ela um valor inteiro (4)
+// // 'dynamic' permite que o tipo da variável seja resolvido em tempo de execução, não em tempo de compilação
+// dynamic variavelDinamica = 4;
 
-// Exibe o tipo atual e o valor da variável no console
-// Neste caso, GetType() retornará 'System.Int32' pois o valor atual é um inteiro
-Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+// // Exibe o tipo atual e o valor da variável no console
+// // Neste caso, GetType() retornará 'System.Int32' pois o valor atual é um inteiro
+// Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
-// Atribui uma string ("Texto") à mesma variável dinâmica
-// Como 'variavelDinamica' é do tipo 'dynamic', ela pode mudar de tipo em tempo de execução
-variavelDinamica = "Texto";
+// // Atribui uma string ("Texto") à mesma variável dinâmica
+// // Como 'variavelDinamica' é do tipo 'dynamic', ela pode mudar de tipo em tempo de execução
+// variavelDinamica = "Texto";
 
-// Exibe o novo tipo e o valor da variável no console
-// Agora, GetType() retornará 'System.String' porque o valor atual é uma string
-Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+// // Exibe o novo tipo e o valor da variável no console
+// // Agora, GetType() retornará 'System.String' porque o valor atual é uma string
+// Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
-// Atribui um valor booleano (true) à variável dinâmica
-// Mais uma vez, o tipo da variável muda em tempo de execução para se adaptar ao novo valor
-variavelDinamica = true;
+// // Atribui um valor booleano (true) à variável dinâmica
+// // Mais uma vez, o tipo da variável muda em tempo de execução para se adaptar ao novo valor
+// variavelDinamica = true;
 
-// Exibe o tipo e o valor atual da variável no console
-// GetType() retornará 'System.Boolean' já que agora a variável contém um valor booleano
-Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+// // Exibe o tipo e o valor atual da variável no console
+// // GetType() retornará 'System.Boolean' já que agora a variável contém um valor booleano
+// Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
 
 
