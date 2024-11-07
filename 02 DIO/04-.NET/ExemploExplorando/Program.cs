@@ -6,25 +6,57 @@ using System.Data;
 using System.Globalization;
 using System.Reflection; //Alterando a localização do código
 
-//Tipos anonimos em colecao
-// Carrega o conteúdo do arquivo JSON em uma string
-string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 
-// Deserializa o conteúdo JSON em uma lista de objetos do tipo Venda
-// Isso converte o JSON em uma lista de instâncias da classe Venda
-List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+//Tipo variavel dinâmica
+// Declara uma variável dinâmica chamada 'variavelDinamica' e atribui a ela um valor inteiro (4)
+// 'dynamic' permite que o tipo da variável seja resolvido em tempo de execução, não em tempo de compilação
+dynamic variavelDinamica = 4;
 
-// Cria uma nova lista com objetos anônimos usando LINQ
-// Aqui, estamos selecionando apenas as propriedades "Produto" e "Preco" da lista de vendas
-// O tipo anônimo { Produto, Preco } é útil quando precisamos de apenas algumas propriedades dos objetos da lista
-var ListaAnonimo = listaVenda.Select(x => new { x.Produto, x.Preco });
+// Exibe o tipo atual e o valor da variável no console
+// Neste caso, GetType() retornará 'System.Int32' pois o valor atual é um inteiro
+Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
-// Percorre a lista de objetos anônimos e exibe os dados no console
-foreach (var venda in ListaAnonimo)
-{
-    // Imprime o nome do produto e o preço formatado
-    Console.WriteLine($"Produto: {venda.Produto}, Preço: {venda.Preco} ");
-}
+// Atribui uma string ("Texto") à mesma variável dinâmica
+// Como 'variavelDinamica' é do tipo 'dynamic', ela pode mudar de tipo em tempo de execução
+variavelDinamica = "Texto";
+
+// Exibe o novo tipo e o valor da variável no console
+// Agora, GetType() retornará 'System.String' porque o valor atual é uma string
+Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+// Atribui um valor booleano (true) à variável dinâmica
+// Mais uma vez, o tipo da variável muda em tempo de execução para se adaptar ao novo valor
+variavelDinamica = true;
+
+// Exibe o tipo e o valor atual da variável no console
+// GetType() retornará 'System.Boolean' já que agora a variável contém um valor booleano
+Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+
+
+
+
+
+
+// //Tipos anonimos em colecao
+// // Carrega o conteúdo do arquivo JSON em uma string
+// string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+
+// // Deserializa o conteúdo JSON em uma lista de objetos do tipo Venda
+// // Isso converte o JSON em uma lista de instâncias da classe Venda
+// List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// // Cria uma nova lista com objetos anônimos usando LINQ
+// // Aqui, estamos selecionando apenas as propriedades "Produto" e "Preco" da lista de vendas
+// // O tipo anônimo { Produto, Preco } é útil quando precisamos de apenas algumas propriedades dos objetos da lista
+// var ListaAnonimo = listaVenda.Select(x => new { x.Produto, x.Preco });
+
+// // Percorre a lista de objetos anônimos e exibe os dados no console
+// foreach (var venda in ListaAnonimo)
+// {
+//     // Imprime o nome do produto e o preço formatado
+//     Console.WriteLine($"Produto: {venda.Produto}, Preço: {venda.Preco} ");
+// }
 
 
 
