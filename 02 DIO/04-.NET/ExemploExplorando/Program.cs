@@ -7,6 +7,33 @@ using System.Globalization;
 using System.Reflection; //Alterando a localização do código
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // //Tipo variavel dinâmica
 // // Declara uma variável dinâmica chamada 'variavelDinamica' e atribui a ela um valor inteiro (4)
 // // 'dynamic' permite que o tipo da variável seja resolvido em tempo de execução, não em tempo de compilação
