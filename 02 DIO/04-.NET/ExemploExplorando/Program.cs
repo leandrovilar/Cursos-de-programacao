@@ -1,5 +1,6 @@
 ﻿using ExemploExplorando;
 using ExemploExplorando.Models;
+using Models;
 using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +9,16 @@ using System.Reflection; //Alterando a localização do código
 
 
 
+//Testando classe genérica
+//tipo inteiro
+MeuArray<int> arrayInteiro = new MeuArray<int>();
+arrayInteiro.AdicionarElementoArray(30);
+Console.WriteLine(arrayInteiro[0]);
 
-
+//tipo string
+MeuArray<string> arrayString = new MeuArray<string>();
+arrayString.AdicionarElementoArray("teste");
+Console.WriteLine(arrayString[0]);
 
 
 
