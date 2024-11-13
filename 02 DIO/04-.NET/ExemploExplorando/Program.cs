@@ -8,17 +8,37 @@ using System.Globalization;
 using System.Reflection; //Alterando a localização do código
 
 
+//Métodos de extensão
+int numero = 15;
+bool par = false;
 
-//Testando classe genérica
-//tipo inteiro
-MeuArray<int> arrayInteiro = new MeuArray<int>();
-arrayInteiro.AdicionarElementoArray(30);
-Console.WriteLine(arrayInteiro[0]);
+//If Ternário
+par = numero.EhPar();
 
-//tipo string
-MeuArray<string> arrayString = new MeuArray<string>();
-arrayString.AdicionarElementoArray("teste");
-Console.WriteLine(arrayString[0]);
+string mensgem = "O número " + numero + " " + "é " + (par ? "par" : "ímpar");
+Console.WriteLine(mensgem);
+
+
+
+
+
+
+
+
+
+
+
+
+// //Testando classe genérica
+// //tipo inteiro
+// MeuArray<int> arrayInteiro = new MeuArray<int>();
+// arrayInteiro.AdicionarElementoArray(30);
+// Console.WriteLine(arrayInteiro[0]);
+
+// //tipo string
+// MeuArray<string> arrayString = new MeuArray<string>();
+// arrayString.AdicionarElementoArray("teste");
+// Console.WriteLine(arrayString[0]);
 
 
 
