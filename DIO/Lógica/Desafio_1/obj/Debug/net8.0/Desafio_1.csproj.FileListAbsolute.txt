@@ -1,0 +1,15 @@
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.AssemblyInfoInputs.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.AssemblyInfo.cs
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.csproj.CoreCompileInputs.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.sourcelink.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\bin\Debug\net8.0\Desafio_1.exe
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\bin\Debug\net8.0\Desafio_1.deps.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\bin\Debug\net8.0\Desafio_1.runtimeconfig.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\bin\Debug\net8.0\Desafio_1.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\bin\Debug\net8.0\Desafio_1.pdb
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\refint\Desafio_1.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.pdb
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\Desafio_1.genruntimeconfig.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\Lógica\Desafio_1\obj\Debug\net8.0\ref\Desafio_1.dll
