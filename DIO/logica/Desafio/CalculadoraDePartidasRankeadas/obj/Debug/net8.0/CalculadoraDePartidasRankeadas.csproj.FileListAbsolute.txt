@@ -1,0 +1,15 @@
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\bin\Debug\net8.0\CalculadoraDePartidasRankeadas.exe
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\bin\Debug\net8.0\CalculadoraDePartidasRankeadas.deps.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\bin\Debug\net8.0\CalculadoraDePartidasRankeadas.runtimeconfig.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\bin\Debug\net8.0\CalculadoraDePartidasRankeadas.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\bin\Debug\net8.0\CalculadoraDePartidasRankeadas.pdb
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.AssemblyInfoInputs.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.AssemblyInfo.cs
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.csproj.CoreCompileInputs.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.sourcelink.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\refint\CalculadoraDePartidasRankeadas.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.pdb
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\CalculadoraDePartidasRankeadas.genruntimeconfig.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\DIO\logica\Desafio\CalculadoraDePartidasRankeadas\obj\Debug\net8.0\ref\CalculadoraDePartidasRankeadas.dll
