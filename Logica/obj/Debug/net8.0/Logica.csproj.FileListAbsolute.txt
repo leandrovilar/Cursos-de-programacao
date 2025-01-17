@@ -1,0 +1,15 @@
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\bin\Debug\net8.0\Logica.exe
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\bin\Debug\net8.0\Logica.deps.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\bin\Debug\net8.0\Logica.runtimeconfig.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\bin\Debug\net8.0\Logica.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\bin\Debug\net8.0\Logica.pdb
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.AssemblyInfo.cs
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.sourcelink.json
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\refint\Logica.dll
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.pdb
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\Logica.genruntimeconfig.cache
+C:\Users\Leandro\Desktop\Programação\#Cursos-de-programacao\Logica\obj\Debug\net8.0\ref\Logica.dll

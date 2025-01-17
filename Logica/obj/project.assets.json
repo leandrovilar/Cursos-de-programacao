@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Programação\\#Cursos-de-programacao\\DIO\\logica\\Desafio\\CalculadoraDePartidasRankeadas\\CalculadoraDePartidasRankeadas.csproj",
-      "projectName": "CalculadoraDePartidasRankeadas",
-      "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\#Cursos-de-programacao\\DIO\\logica\\Desafio\\CalculadoraDePartidasRankeadas\\CalculadoraDePartidasRankeadas.csproj",
+      "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Programação\\#Cursos-de-programacao\\Logica\\Logica.csproj",
+      "projectName": "Logica",
+      "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\#Cursos-de-programacao\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leandro\\Desktop\\Programação\\#Cursos-de-programacao\\DIO\\logica\\Desafio\\CalculadoraDePartidasRankeadas\\obj\\",
+      "outputPath": "C:\\Users\\Leandro\\Desktop\\Programação\\#Cursos-de-programacao\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
