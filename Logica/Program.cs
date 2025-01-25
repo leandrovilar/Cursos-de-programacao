@@ -1,20 +1,34 @@
-﻿
+﻿// Estrutura de multiplas condições
+int nota = 50;
 
-
-
-
-
-//Estrutura composta if, else
-int idade = 10;
-
-if ( idade >= 18)
+if (nota >= 90)
 {
-    Console.WriteLine("É mair de idade");
+    Console.WriteLine("Otima nota");
+}
+else if (nota >= 70)
+{
+    Console.WriteLine("Boa nota");
 }
 else
 {
-    Console.WriteLine("É menor de idade");
+    Console.WriteLine("Reprovado");
 }
+
+
+
+
+
+// //Estrutura composta if, else
+// int idade = 10;
+
+// if ( idade >= 18)
+// {
+//     Console.WriteLine("É mair de idade");
+// }
+// else
+// {
+//     Console.WriteLine("É menor de idade");
+// }
 
 
 
