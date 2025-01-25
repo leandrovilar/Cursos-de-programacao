@@ -1,11 +1,32 @@
 ﻿
-//Estrutura simples
-int idade = 20;
 
-if (idade >= 18)
+
+
+
+
+//Estrutura composta if, else
+int idade = 10;
+
+if ( idade >= 18)
 {
-    Console.WriteLine("É mair de idade.");
+    Console.WriteLine("É mair de idade");
 }
+else
+{
+    Console.WriteLine("É menor de idade");
+}
+
+
+
+
+
+// //Estrutura simples if
+// int idade = 20;
+
+// if (idade >= 18)
+// {
+//     Console.WriteLine("É mair de idade.");
+// }
 
 
 
