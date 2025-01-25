@@ -1,4 +1,11 @@
 ﻿
+//Estrutura simples
+int idade = 20;
+
+if (idade >= 18)
+{
+    Console.WriteLine("É mair de idade.");
+}
 
 
 
