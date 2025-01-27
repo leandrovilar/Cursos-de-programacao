@@ -1,18 +1,37 @@
-﻿// Estrutura de multiplas condições
-int nota = 50;
+﻿
 
-if (nota >= 90)
-{
-    Console.WriteLine("Otima nota");
+//Enquanto/While
+using System;
+
+class Program{
+    static void Main(string[] args){
+        int contador = 1;
+
+        while(contador <= 5){
+            Console.WriteLine($"contador: {contador}");
+            contador++;
+        }
+    }
 }
-else if (nota >= 70)
-{
-    Console.WriteLine("Boa nota");
-}
-else
-{
-    Console.WriteLine("Reprovado");
-}
+
+
+
+
+// // Estrutura de multiplas condições
+// int nota = 50;
+
+// if (nota >= 90)
+// {
+//     Console.WriteLine("Otima nota");
+// }
+// else if (nota >= 70)
+// {
+//     Console.WriteLine("Boa nota");
+// }
+// else
+// {
+//     Console.WriteLine("Reprovado");
+// }
 
 
 
