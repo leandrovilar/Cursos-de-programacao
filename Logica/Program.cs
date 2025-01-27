@@ -1,15 +1,39 @@
 ﻿using System;
+using System.Diagnostics;
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        int opcao = 3;
 
-//For (Executar um número fixo de vezes.)
-class Program{
-    static void Main(string[] args){
-        for (int i = 1; i <= 50; i++){
-            Console.WriteLine($"Contador: {i}");
+        switch (opcao)
+        {
+            case 1:
+                Console.WriteLine("Você escolheu a opção 1");
+                break;
+            case 2:
+                Console.WriteLine("Você escolheu a opção 2");
+                break;
+            default:
+                Console.WriteLine("Opção Invalido");
+                break;
         }
     }
 }
 
+
+
+
+
+// //For (Executar um número fixo de vezes.)
+// class Program{
+//     static void Main(string[] args){
+//         for (int i = 1; i <= 50; i++){
+//             Console.WriteLine($"Contador: {i}");
+//         }
+//     }
+// }
 
 
 
