@@ -1,18 +1,35 @@
-﻿
+﻿using System;
 
-//Enquanto/While
-using System;
+
 
 class Program{
     static void Main(string[] args){
         int contador = 1;
 
-        while(contador <= 5){
-            Console.WriteLine($"contador: {contador}");
+        do
+        {
+            Console.WriteLine($"Contador: {contador}");
             contador++;
-        }
+        } while (contador <= 100);
     }
 }
+
+
+
+
+
+// //Enquanto/While
+// using System;
+// class Program{
+//     static void Main(string[] args){
+//         int contador = 1;
+
+//         while(contador <= 5){
+//             Console.WriteLine($"contador: {contador}");
+//             contador++;
+//         }
+//     }
+// }
 
 
 
