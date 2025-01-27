@@ -1,26 +1,43 @@
 ﻿using System;
 using System.Diagnostics;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        int opcao = 3;
+//Exemplos práticos
+// Verificar se um número é par ou impar
+class Program{
+    static void Main (string[] args){
+        Console.Write("Digite um número");
+        int numero = int.Parse(Console.ReadLine());
 
-        switch (opcao)
-        {
-            case 1:
-                Console.WriteLine("Você escolheu a opção 1");
-                break;
-            case 2:
-                Console.WriteLine("Você escolheu a opção 2");
-                break;
-            default:
-                Console.WriteLine("Opção Invalido");
-                break;
+        if (numero % 2 == 0){
+            Console.WriteLine("O número é par: ");
+        }else{
+            Console.WriteLine("O número e ímpar: ");
         }
     }
 }
+
+
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         int opcao = 3;
+
+//         switch (opcao)
+//         {
+//             case 1:
+//                 Console.WriteLine("Você escolheu a opção 1");
+//                 break;
+//             case 2:
+//                 Console.WriteLine("Você escolheu a opção 2");
+//                 break;
+//             default:
+//                 Console.WriteLine("Opção Invalido");
+//                 break;
+//         }
+//     }
+// }
 
 
 
