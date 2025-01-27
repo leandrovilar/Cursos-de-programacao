@@ -1,16 +1,12 @@
 ﻿using System;
 
 
-
+//For (Executar um número fixo de vezes.)
 class Program{
     static void Main(string[] args){
-        int contador = 1;
-
-        do
-        {
-            Console.WriteLine($"Contador: {contador}");
-            contador++;
-        } while (contador <= 100);
+        for (int i = 1; i <= 50; i++){
+            Console.WriteLine($"Contador: {i}");
+        }
     }
 }
 
@@ -18,7 +14,25 @@ class Program{
 
 
 
-// //Enquanto/While
+
+// //Do-While (Repetição com Teste no Final)
+// class Program{
+//     static void Main(string[] args){
+//         int contador = 1;
+
+//         do
+//         {
+//             Console.WriteLine($"Contador: {contador}");
+//             contador++;
+//         } while (contador <= 100);
+//     }
+// }
+
+
+
+
+
+// //While (Repetição com Teste no Início)
 // using System;
 // class Program{
 //     static void Main(string[] args){
