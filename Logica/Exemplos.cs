@@ -1,36 +1,73 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Logica
 {
 
-    //3. Estrutura Condicional com Múltiplas Condições (Classificar uma nota)
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.Write("Digite uma nota de 0 a 100:  ");
-            int nota = int.Parse(Console.ReadLine());
-
-            if (nota >= 90)
-            {
-                Console.WriteLine("Aprovado com Excelente!.");
-            }
-            else if (nota >= 70)
-            {
-                Console.WriteLine("Aprovado.");
-            }
-            else
-            {
-                Console.WriteLine("Reprovaodo.");
-            }
 
 
 
-        }
-    }
+
+    // //4. Estrutura de Repetição (While) (Exemplo: Contar até 5)
+    // class Program
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //         int contador = 1;
+
+    //         while (contador <= 5)
+    //         {
+    //             Console.WriteLine($"Contador: {contador}");
+    //             contador++;
+    //         }
+    //     }
+    // }
+
+
+    // // Ler números até o usuário digitar zero
+    // class Program
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //         Console.WriteLine("Digite número. Digite 0 para encerrar.");
+    //         int numero = int.Parse(Console.ReadLine());
+
+    //         while (numero != 0)
+    //         {
+    //             Console.WriteLine($"Você digitou: {numero}");
+    //             numero = int.Parse(Console.ReadLine());
+    //         }
+    //         Console.WriteLine("Fim do programa.");
+    //     }
+    // }
+
+
+    // //3. Estrutura Condicional com Múltiplas Condições (Classificar uma nota)
+    //     class Program
+    //     {
+    //         static void Main(string[] args)
+    //         {
+    //             Console.Write("Digite uma nota de 0 a 100:  ");
+    //             int nota = int.Parse(Console.ReadLine());
+
+    //             if (nota >= 90)
+    //             {
+    //                 Console.WriteLine("Aprovado com Excelente!.");
+    //             }
+    //             else if (nota >= 70)
+    //             {
+    //                 Console.WriteLine("Aprovado.");
+    //             }
+    //             else
+    //             {
+    //                 Console.WriteLine("Reprovaodo.");
+    //             }
+    //         }
+    //     }
 
 
 
