@@ -6,24 +6,52 @@ using System.Threading.Tasks;
 namespace Logica
 {
 
-    //2. Estrutura Condicional Composta (Verificar se um número é positivo ou negativo)
+    //3. Estrutura Condicional com Múltiplas Condições (Classificar uma nota)
     class Program
     {
-        static void Main (string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Digite um número");
-            int numero = int.Parse(Console.ReadLine());
+            Console.Write("Digite uma nota de 0 a 100:  ");
+            int nota = int.Parse(Console.ReadLine());
 
-            if(numero > 0)
+            if (nota >= 90)
             {
-                Console.WriteLine($"Número: {numero} é positivo.");
+                Console.WriteLine("Aprovado com Excelente!.");
+            }
+            else if (nota >= 70)
+            {
+                Console.WriteLine("Aprovado.");
             }
             else
             {
-                Console.WriteLine($"Número: {numero} é negativo ou 0.");
+                Console.WriteLine("Reprovaodo.");
             }
+
+
+
         }
     }
+
+
+
+    //2. Estrutura Condicional Composta (Verificar se um número é positivo ou negativo)
+    // class Program
+    // {
+    //     static void Main (string[] args)
+    //     {
+    //         Console.WriteLine("Digite um número");
+    //         int numero = int.Parse(Console.ReadLine());
+
+    //         if(numero > 0)
+    //         {
+    //             Console.WriteLine($"Número: {numero} é positivo.");
+    //         }
+    //         else
+    //         {
+    //             Console.WriteLine($"Número: {numero} é negativo ou 0.");
+    //         }
+    //     }
+    // }
 
 
     // //1. Estrutura Condicional Simples - (Verificar se um número é positivo)
