@@ -6,6 +6,26 @@ using System.Threading.Tasks;
 namespace Logica
 {
 
+    //2. Estrutura Condicional Composta (Verificar se um número é positivo ou negativo)
+    class Program
+    {
+        static void Main (string[] args)
+        {
+            Console.WriteLine("Digite um número");
+            int numero = int.Parse(Console.ReadLine());
+
+            if(numero > 0)
+            {
+                Console.WriteLine($"Número: {numero} é positivo.");
+            }
+            else
+            {
+                Console.WriteLine($"Número: {numero} é negativo ou 0.");
+            }
+        }
+    }
+
+
     // //1. Estrutura Condicional Simples - (Verificar se um número é positivo)
     // public class Exemplos
     // {
