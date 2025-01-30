@@ -10,6 +10,29 @@ namespace Logica
 
 
 
+    //5. Estrutura de Repetição (Do-While) (Ler números até o usuário digitar zero)
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero;
+            
+            do
+            {
+                Console.WriteLine("Digite o valor 0 para parar");
+                numero = int.Parse(Console.ReadLine());
+                if (numero != 0)
+                {
+                    Console.WriteLine($"Voce digiteo o {numero}");
+                }
+            } while (numero != 0);
+
+            Console.WriteLine("Fim do programa");
+        }
+    }
+
+
+
 
 
     // //4. Estrutura de Repetição (While) (Exemplo: Contar até 5)
