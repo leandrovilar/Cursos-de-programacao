@@ -9,29 +9,38 @@ namespace Logica
 {
 
 
+    //6. Estrutura de Repetição (For) (Exibir os números de 1 a 10)
 
-    //5. Estrutura de Repetição (Do-While) (Ler números até o usuário digitar zero)
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int numero;
-            
-            do
-            {
-                Console.WriteLine("Digite o valor 0 para parar");
-                numero = int.Parse(Console.ReadLine());
-                if (numero != 0)
-                {
-                    Console.WriteLine($"Voce digiteo o {numero}");
-                }
-            } while (numero != 0);
-
-            Console.WriteLine("Fim do programa");
+    class Program{
+        static void Main(string[] args){
+            for (int i = 0; i <= 10; i++){
+                Console.WriteLine($"Número: {i}");
+            }
         }
     }
 
 
+
+    // //5. Estrutura de Repetição (Do-While) (Ler números até o usuário digitar zero)
+    // class Program
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //         int numero;
+
+    //         do
+    //         {
+    //             Console.WriteLine("Digite o valor 0 para parar");
+    //             numero = int.Parse(Console.ReadLine());
+    //             if (numero != 0)
+    //             {
+    //                 Console.WriteLine($"Voce digiteo o {numero}");
+    //             }
+    //         } while (numero != 0);
+
+    //         Console.WriteLine("Fim do programa");
+    //     }
+    // }
 
 
 
