@@ -2,11 +2,44 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.Contracts;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Logica
 {
+
+    //7.Estrutura Condicional (Switch) (Simular um menu)
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Escolha uam opção");
+            Console.WriteLine("1 - Mostar Mensagem");
+            Console.WriteLine("2 - Exibir data atual");
+            Console.WriteLine("3 - Sair");
+
+            int opcao = int.Parse(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    Console.WriteLine("Olá, seja bem-vindo");
+                    break;
+                case 2:
+                    Console.WriteLine($"Data atual: {DateTime.Now}");
+                    break;
+                case 3:
+                    Console.WriteLine("Saindo do program...");
+                    break;
+                default:
+                    Console.WriteLine("Opção invalida");
+                    break;
+            }
+        }
+    }
+
+
 
 
 
@@ -22,24 +55,22 @@ namespace Logica
     // }
 
 
-    //Exemplo: Calcular o fatorial de um número
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Digite o número para calcuar o fatorial");
-            int numero = int.Parse(Console.ReadLine());
-            int fatorial = 1;
+    // //Exemplo: Calcular o fatorial de um número
+    // class Program
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //         Console.WriteLine("Digite o número para calcuar o fatorial");
+    //         int numero = int.Parse(Console.ReadLine());
+    //         int fatorial = 1;
 
-            for (int i = 1; i <= numero; i++)
-            {
-                fatorial *= i;
-            }
-            Console.WriteLine($"O fatorial de {numero} é {fatorial}");
-        }
-    }
-
-
+    //         for (int i = 1; i <= numero; i++)
+    //         {
+    //             fatorial *= i;
+    //         }
+    //         Console.WriteLine($"O fatorial de {numero} é {fatorial}");
+    //     }
+    // }
 
 
     // //5. Estrutura de Repetição (Do-While) (Ler números até o usuário digitar zero)
