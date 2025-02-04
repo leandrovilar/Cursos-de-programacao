@@ -9,39 +9,69 @@ using System.Threading.Tasks;
 namespace Logica
 {
 
-    //7.Estrutura Condicional (Switch) (Simular um menu)
+    //8. Combinação de Estruturas Exemplo: Jogo de adivinhação (O usuário tenta adivinhar um número secreto.)
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Escolha uam opção");
-            Console.WriteLine("1 - Mostar Mensagem");
-            Console.WriteLine("2 - Exibir data atual");
-            Console.WriteLine("3 - Sair");
+            int numeroSecreto = 7;
+            int palpite;
+            int tentativas = 0;
 
-            int opcao = int.Parse(Console.ReadLine());
+            Console.WriteLine("Tente adivinhar o número secreto (entre 1 e 10):");
 
-            switch (opcao)
+            do
             {
-                case 1:
-                    Console.WriteLine("Olá, seja bem-vindo");
-                    break;
-                case 2:
-                    Console.WriteLine($"Data atual: {DateTime.Now}");
-                    break;
-                case 3:
-                    Console.WriteLine("Saindo do program...");
-                    break;
-                default:
-                    Console.WriteLine("Opção invalida");
-                    break;
-            }
+                Console.Write("Ditite o seu palpite: ");
+                palpite = int.Parse(Console.ReadLine());
+                tentativas++;
+                if (palpite > numeroSecreto)
+                {
+                    Console.WriteLine("O número secreto é mairo. Tente novamente");
+                }
+                else if (palpite < numeroSecreto)
+                {
+                    Console.WriteLine("O número secreto é menor. Tente novamente");
+                }
+            } while (palpite != numeroSecreto);
+
+            Console.WriteLine($"Parabéns! Você acertou o número em {tentativas} tentativa(as).");
         }
     }
 
 
 
 
+
+    // //7.Estrutura Condicional (Switch) (Simular um menu)
+    // class Program
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //         Console.WriteLine("Escolha uam opção");
+    //         Console.WriteLine("1 - Mostar Mensagem");
+    //         Console.WriteLine("2 - Exibir data atual");
+    //         Console.WriteLine("3 - Sair");
+
+    //         int opcao = int.Parse(Console.ReadLine());
+
+    //         switch (opcao)
+    //         {
+    //             case 1:
+    //                 Console.WriteLine("Olá, seja bem-vindo");
+    //                 break;
+    //             case 2:
+    //                 Console.WriteLine($"Data atual: {DateTime.Now}");
+    //                 break;
+    //             case 3:
+    //                 Console.WriteLine("Saindo do program...");
+    //                 break;
+    //             default:
+    //                 Console.WriteLine("Opção invalida");
+    //                 break;
+    //         }
+    //     }
+    // }
 
 
     // //6. Estrutura de Repetição (For) (Exibir os números de 1 a 10)
