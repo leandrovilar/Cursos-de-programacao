@@ -1,20 +1,40 @@
 ﻿using System;
 using System.Diagnostics;
 
+//Função com retorno
 
-//Funções com Parãmetros (valores)
+
 class Program
 {
-    //Função
-    public static void ExibirMensagem(string nome)
+    // Função que recebe dois números e retorna a soma
+    public static int Somar(int a, int b)
     {
-        Console.WriteLine($"Olá, {nome}! Bem-vindo ao C#.");
+        return a + b; // Retorna a soma de dois números
     }
+
+    // Método principal do programa
     static void Main()
     {
-        ExibirMensagem("Leandro"); // Chamando a função com argumento
+        int resultado = Somar(5, 3); // Chamando a função e armazenando o retorno
+        Console.WriteLine($"A soma é: {resultado}"); // Exibindo o resultado
     }
 }
+
+
+// //Funções com Parãmetros (valores)
+// class Program
+// {
+//     // Função(método) que recebe um parâmetro e exibe uma mensagem
+//     public static void ExibirMensagem(string nome)
+//     {
+//         Console.WriteLine($"Olá, {nome}! Bem-vindo ao C#.");
+//     }
+//Função(método) principal do programa
+//     static void Main()
+//     {
+//         ExibirMensagem("Leandro"); // Chamando a função com argumento
+//     }
+// }
 
 
 // //Chamando a função:
