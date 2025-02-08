@@ -3,7 +3,18 @@ using System.Diagnostics;
 
 
 
-
+//Chamando a função:
+class Program
+{
+    static void Main()
+    {
+        MinhaFuncao(); //Chamando a função
+    }
+    public static void MinhaFuncao() //Função
+    {
+        Console.WriteLine("Olá, mundo das funções!");
+    }
+}
 
 
 // //Estrutura básica da função
