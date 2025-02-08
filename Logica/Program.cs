@@ -1,6 +1,24 @@
 ﻿using System;
 using System.Diagnostics;
 
+
+
+
+
+
+// //Estrutura básica da função
+// public static void MinhaFuncao()
+// {
+//     Console.WriteLine("Olá, munto das funções");
+// }
+
+// Explicação:
+// public static → Define o escopo e permite chamar a função sem precisar instanciar uma classe.
+// void → Indica que a função não retorna nenhum valor.
+// MinhaFuncao() → Nome da função.
+// {} → Bloco de código que será executado quando a função for chamada.
+
+
 //Estrutura de Controle Condicional (Switch)
 // class Program
 // {

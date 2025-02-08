@@ -9,38 +9,40 @@ using System.Threading.Tasks;
 namespace Logica
 {
 
-    //8. Combinação de Estruturas Exemplo: Jogo de adivinhação (O usuário tenta adivinhar um número secreto.)
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int numeroSecreto = 7;
-            int palpite;
-            int tentativas = 0;
-
-            Console.WriteLine("Tente adivinhar o número secreto (entre 1 e 10):");
-
-            do
-            {
-                Console.Write("Ditite o seu palpite: ");
-                palpite = int.Parse(Console.ReadLine());
-                tentativas++;
-                if (palpite > numeroSecreto)
-                {
-                    Console.WriteLine("O número secreto é mairo. Tente novamente");
-                }
-                else if (palpite < numeroSecreto)
-                {
-                    Console.WriteLine("O número secreto é menor. Tente novamente");
-                }
-            } while (palpite != numeroSecreto);
-
-            Console.WriteLine($"Parabéns! Você acertou o número em {tentativas} tentativa(as).");
-        }
-    }
 
 
 
+
+
+    // //8. Combinação de Estruturas Exemplo: Jogo de adivinhação (O usuário tenta adivinhar um número secreto.)
+    // class Program
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //         int numeroSecreto = 7;
+    //         int palpite;
+    //         int tentativas = 0;
+
+    //         Console.WriteLine("Tente adivinhar o número secreto (entre 1 e 10):");
+
+    //         do
+    //         {
+    //             Console.Write("Ditite o seu palpite: ");
+    //             palpite = int.Parse(Console.ReadLine());
+    //             tentativas++;
+    //             if (palpite > numeroSecreto)
+    //             {
+    //                 Console.WriteLine("O número secreto é mairo. Tente novamente");
+    //             }
+    //             else if (palpite < numeroSecreto)
+    //             {
+    //                 Console.WriteLine("O número secreto é menor. Tente novamente");
+    //             }
+    //         } while (palpite != numeroSecreto);
+
+    //         Console.WriteLine($"Parabéns! Você acertou o número em {tentativas} tentativa(as).");
+    //     }
+    // }
 
 
     // //7.Estrutura Condicional (Switch) (Simular um menu)
@@ -74,18 +76,7 @@ namespace Logica
     // }
 
 
-    // //6. Estrutura de Repetição (For) (Exibir os números de 1 a 10)
-
-    // class Program{
-    //     static void Main(string[] args){
-    //         for (int i = 0; i <= 10; i++){
-    //             Console.WriteLine($"Número: {i}");
-    //         }
-    //     }
-    // }
-
-
-    // //Exemplo: Calcular o fatorial de um número
+    // //6. Estrutura de Repetição (For) (Calcular o fatorial de um número)
     // class Program
     // {
     //     static void Main(string[] args)
@@ -99,6 +90,16 @@ namespace Logica
     //             fatorial *= i;
     //         }
     //         Console.WriteLine($"O fatorial de {numero} é {fatorial}");
+    //     }
+    // }
+
+
+    // //6. Estrutura de Repetição (For) (Exibir os números de 1 a 10)
+    // class Program{
+    //     static void Main(string[] args){
+    //         for (int i = 0; i <= 10; i++){
+    //             Console.WriteLine($"Número: {i}");
+    //         }
     //     }
     // }
 
