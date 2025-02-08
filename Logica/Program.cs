@@ -2,19 +2,33 @@
 using System.Diagnostics;
 
 
-
-//Chamando a função:
+//Funções com Parãmetros (valores)
 class Program
 {
+    //Função
+    public static void ExibirMensagem(string nome)
+    {
+        Console.WriteLine($"Olá, {nome}! Bem-vindo ao C#.");
+    }
     static void Main()
     {
-        MinhaFuncao(); //Chamando a função
-    }
-    public static void MinhaFuncao() //Função
-    {
-        Console.WriteLine("Olá, mundo das funções!");
+        ExibirMensagem("Leandro"); // Chamando a função com argumento
     }
 }
+
+
+// //Chamando a função:
+// class Program
+// {
+//     static void Main()
+//     {
+//         MinhaFuncao(); //Chamando a função
+//     }
+//     public static void MinhaFuncao() //Função
+//     {
+//         Console.WriteLine("Olá, mundo das funções!");
+//     }
+// }
 
 
 // //Estrutura básica da função
