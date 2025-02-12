@@ -4,21 +4,26 @@ using System.Diagnostics;
 //Função com retorno
 
 
-class Program
-{
-    // Função que recebe dois números e retorna a soma
-    public static int Somar(int a, int b)
-    {
-        return a + b; // Retorna a soma de dois números
-    }
 
-    // Método principal do programa
-    static void Main()
-    {
-        int resultado = Somar(5, 3); // Chamando a função e armazenando o retorno
-        Console.WriteLine($"A soma é: {resultado}"); // Exibindo o resultado
-    }
-}
+
+
+
+
+// class Program
+// {
+//     // Função que recebe dois números e retorna a soma
+//     public static int Somar(int a, int b)
+//     {
+//         return a + b; // Retorna a soma de dois números
+//     }
+
+//     // Método principal do programa
+//     static void Main()
+//     {
+//         int resultado = Somar(5, 3); // Chamando a função e armazenando o retorno
+//         Console.WriteLine($"A soma é: {resultado}"); // Exibindo o resultado
+//     }
+// }
 
 
 // //Funções com Parãmetros (valores)
