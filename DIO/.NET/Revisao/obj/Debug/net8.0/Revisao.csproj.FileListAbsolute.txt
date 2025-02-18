@@ -1,0 +1,15 @@
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\bin\Debug\net8.0\Revisao.exe
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\bin\Debug\net8.0\Revisao.deps.json
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\bin\Debug\net8.0\Revisao.runtimeconfig.json
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\bin\Debug\net8.0\Revisao.dll
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\bin\Debug\net8.0\Revisao.pdb
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.AssemblyInfoInputs.cache
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.AssemblyInfo.cs
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.csproj.CoreCompileInputs.cache
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.sourcelink.json
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.dll
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\refint\Revisao.dll
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.pdb
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\Revisao.genruntimeconfig.cache
+C:\Ti\#Cursos-de-programacao\DIO\.NET\Revisao\obj\Debug\net8.0\ref\Revisao.dll

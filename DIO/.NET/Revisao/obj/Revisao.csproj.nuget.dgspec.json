@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {}
+    "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\Revisao\\Revisao.csproj": {}
   },
   "projects": {
-    "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+    "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\Revisao\\Revisao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
-        "projectName": "ExemploFundamentos.Common",
-        "projectPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+        "projectUniqueName": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\Revisao\\Revisao.csproj",
+        "projectName": "Revisao",
+        "projectPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\Revisao\\Revisao.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
+        "outputPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\Revisao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
