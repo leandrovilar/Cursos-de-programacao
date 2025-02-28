@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj": {}
+    "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj": {
+    "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectUniqueName": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj",
         "projectName": "ExemploExplorando",
-        "projectPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectPath": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro\\Desktop\\Programação\\cursos_de_programacao\\02 DIO\\04-.NET\\ExemploExplorando\\obj\\",
+        "outputPath": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

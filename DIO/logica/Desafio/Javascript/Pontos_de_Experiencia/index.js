@@ -3,11 +3,11 @@
 //- "print": imprime um texto de saída (output), pulando linha.
 
 // Entrada de dados. Lembre-se: O parseInt(()) é importante para a conversão dos valores de entrada(String) para um valor numérico(int).
+
 let num1 = parseInt(gets());
 let num2 = parseInt(gets());
 
-//TODO: Implemente a lógica para exibir o xpGanho:
-const xpGanho = ;
+const xpGanho = (num1 * num2) * 100; 
 
-// Imprime a quantidade de XP ganho
-print("Voce ganhou " + xpGanho + " XP!");
+console.log("Você ganhou " + xpGanho + " XP!");
+alert("Você ganhou " + xpGanho + " XP!");
