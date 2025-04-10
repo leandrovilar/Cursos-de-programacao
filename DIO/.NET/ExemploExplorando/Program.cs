@@ -8,15 +8,30 @@ using System.Globalization;
 using System.Reflection; //Alterando a localização do código
 
 
-//Métodos de extensão
-int numero = 15;
-bool par = false;
 
-//If Ternário
-par = numero.EhPar();
 
-string mensgem = "O número " + numero + " " + "é " + (par ? "par" : "ímpar");
-Console.WriteLine(mensgem);
+// dynamic variavelDinamica = 4;
+// Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+// dynamic variavelDinamica = "Texto";
+// Console.WriteLine($"Tipo da variável: {VariavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+// dynamic variavelDinamica = true;
+// Console.WriteLine($"Tipo da variável: {VariavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+
+
+
+
+// //Métodos de extensão
+// int numero = 15;
+// bool par = false;
+
+// //If Ternário
+// par = numero.EhPar();
+
+// string mensgem = "O número " + numero + " " + "é " + (par ? "par" : "ímpar");
+// Console.WriteLine(mensgem);
 
 
 
@@ -674,6 +689,7 @@ Console.WriteLine(mensgem);
 // //Metodo adicionar aluno
 // cursoDeIngles.AdicionarAluno(p1);
 // cursoDeIngles.AdicionarAluno(p2);
+
 // //Metodo listar alunos
 // cursoDeIngles.ListarAlunos();
 

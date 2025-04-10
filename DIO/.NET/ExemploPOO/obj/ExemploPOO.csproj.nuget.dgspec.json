@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj": {}
+    "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploPOO\\ExemploPOO.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj": {
+    "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploPOO\\ExemploPOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj",
-        "projectName": "ExemploExplorando",
-        "projectPath": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectUniqueName": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploPOO\\ExemploPOO.csproj",
+        "projectName": "ExemploPOO",
+        "projectPath": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploPOO\\ExemploPOO.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploExplorando\\obj\\",
+        "outputPath": "C:\\Projetos\\#Cursos-de-programacao\\DIO\\.NET\\ExemploPOO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,12 +42,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

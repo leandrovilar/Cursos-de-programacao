@@ -16,3 +16,12 @@ C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\Exem
 C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.AssemblyReference.cache
 C:\Users\Leandro\Desktop\Programação\cursos_de_programacao\02 DIO\04-.NET\ExemploExplorando\obj\Debug\net8.0\ExemploE.B7F01285.Up2Date
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.AssemblyReference.cache
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.AssemblyInfoInputs.cache
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.AssemblyInfo.cs
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.CoreCompileInputs.cache
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.sourcelink.json
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.dll
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\refint\ExemploExplorando.dll
+C:\Projetos\#Cursos-de-programacao\DIO\.NET\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
