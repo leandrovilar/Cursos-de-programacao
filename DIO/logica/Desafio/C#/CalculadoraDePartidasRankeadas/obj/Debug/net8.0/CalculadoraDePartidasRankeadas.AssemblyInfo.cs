@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculadoraDePartidasRankeadas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+497bbe4742180ad4e586f50e7a1faed7417f64ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c70048162c4de5ffc15e87c9dd0506443215b02")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculadoraDePartidasRankeadas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculadoraDePartidasRankeadas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
