@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {}
+    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {}
   },
   "projects": {
-    "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+        "projectUniqueName": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
         "projectName": "ExemploFundamentos.Common",
-        "projectPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+        "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
+        "outputPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -58,34 +65,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {
+    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
+        "projectUniqueName": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
         "projectName": "ExemploFundamentos",
-        "projectPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
+        "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\obj\\",
+        "outputPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
-                "projectPath": "C:\\Ti\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj"
+              "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj": {
+                "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj"
               }
             }
           }
@@ -99,7 +112,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -120,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
