@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "D49pXgh1jDc=",
+  "success": true,
+  "projectFilePath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ModuloAPI\\ModuloAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
