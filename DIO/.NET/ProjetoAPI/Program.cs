@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MinimalApi.Dominio.Interfaces;
+using MinimalApi.Dominio.ModelViews;
 using MinimalApi.Dominio.Servicos;
 using MinimalApi.DTOS;
 using MinimalApi.Infraestrutura.Db;
@@ -21,8 +22,10 @@ builder.Services.AddDbContext<DbContexto>(options => options.UseMySql(
 
 var app = builder.Build();
 
+app.UseSwagger();
+app.UseSwaggerUI();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => Results.Json(new Home()));
 
 app.MapPost("/login", ([FromBody]LoginDTO loginDTO, IAdministradorServico administradorServico) =>
 {
@@ -32,6 +35,4 @@ app.MapPost("/login", ([FromBody]LoginDTO loginDTO, IAdministradorServico admini
         return Results.Unauthorized();
 });
 
-app.UseSwagger();
-app.UseSwaggerUI();
 app.Run();
