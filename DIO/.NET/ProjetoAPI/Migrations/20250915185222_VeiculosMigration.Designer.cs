@@ -10,7 +10,7 @@ using MinimalApi.Infraestrutura.Db;
 namespace ProjetoAPI.Migrations
 {
     [DbContext(typeof(DbContexto))]
-    [Migration("20250910143412_VeiculosMigration")]
+    [Migration("20250915185222_VeiculosMigration")]
     partial class VeiculosMigration
     {
         /// <inheritdoc />
@@ -58,9 +58,9 @@ namespace ProjetoAPI.Migrations
 
             modelBuilder.Entity("MinimalApi.Dominio.Entidades.Veiculo", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("varchar(255)");
+                        .HasColumnType("int");
 
                     b.Property<int>("Ano")
                         .HasColumnType("int");

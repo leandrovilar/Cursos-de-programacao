@@ -55,9 +55,9 @@ namespace ProjetoAPI.Migrations
 
             modelBuilder.Entity("MinimalApi.Dominio.Entidades.Veiculo", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("varchar(255)");
+                        .HasColumnType("int");
 
                     b.Property<int>("Ano")
                         .HasColumnType("int");
