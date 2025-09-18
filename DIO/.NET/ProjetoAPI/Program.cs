@@ -9,10 +9,9 @@ using MinimalApi.Dominio.ModelViews;
 using MinimalApi.Dominio.Servicos;
 using MinimalApi.DTOS;
 using MinimalApi.Infraestrutura.Db;
-
 #endregion
 
-#region Buider
+#region Builder
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IAdministradorServico, AdministradorServico>();
@@ -43,7 +42,7 @@ app.MapPost("Administradores/login", ([FromBody] LoginDTO loginDTO, IAdministrad
 }).WithTags("Administradores");
 #endregion
 
-#region Veiculos
+#region Veiculos Funçoes auxiliares
 ErrosDeValidacao validaDTO(VeiculoDTO veiculoDTO){
 
 var validacao = new ErrosDeValidacao{
@@ -61,7 +60,9 @@ validacao.Mensagens.Add("Veiculo muito antico, aceito somente até 1950");
 
 return validacao;
 }
+#endregion
 
+#region Veiculos
 app.MapPost("/veiculos", ([FromBody] VeiculoDTO veiculoDTO, IVeiculoServico veiculoServico) =>
 {
 var validacao = validaDTO(veiculoDTO);
