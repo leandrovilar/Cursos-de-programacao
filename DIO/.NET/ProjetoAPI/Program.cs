@@ -9,6 +9,7 @@ using MinimalApi.Dominio.ModelViews;
 using MinimalApi.Dominio.Servicos;
 using MinimalApi.DTOS;
 using MinimalApi.Infraestrutura.Db;
+using MinimalApi.Dominio.Enuns;
 #endregion
 
 #region Builder
@@ -33,13 +34,46 @@ app.MapGet("/", () => Results.Json(new Home())).WithTags("Home");
 #endregion
 
 #region Administradores
-app.MapPost("Administradores/login", ([FromBody] LoginDTO loginDTO, IAdministradorServico administradorServico) =>
+
+app.MapPost("/Administradores/login", ([FromBody] LoginDTO loginDTO, IAdministradorServico administradorServico) =>
 {
     if (administradorServico.Login(loginDTO) != null)
         return Results.Ok("Login com sucesso");
     else
         return Results.Unauthorized();
 }).WithTags("Administradores");
+
+app.MapPost("/Administradores", ([FromBody] AdministradorDTO administradorDTO, IAdministradorServico administradorServico) =>
+{
+    var validacao = new ErrosDeValidacao
+    {
+        Mensagens = new List<string>()
+    };
+
+    if (string.IsNullOrEmpty(administradorDTO.Email))
+        validacao.Mensagens.Add("Email não pode ser vazio");
+    if (string.IsNullOrEmpty(administradorDTO.Password))
+        validacao.Mensagens.Add("Email não pode ser vazio");
+    if (administradorDTO.Perfil == null)
+        validacao.Mensagens.Add("Email não pode ser vazio");
+
+    if (validacao.Mensagens.Count > 0)
+        return Results.BadRequest(validacao);
+
+    var veiculo = new Administrador
+    {
+        Email = administradorDTO.Email,
+        Password = administradorDTO.Password,
+        Perfil = administradorDTO.Perfil.ToString() ?? Perfil.editor.ToString()
+    };
+
+    administradorServico.Incluir(veiculo);
+
+    return Results.Created($"/administrador/{veiculo.Id}", veiculo);
+
+}).WithTags("Administradores");
+
+
 #endregion
 
 #region Veiculos Funçoes auxiliares
