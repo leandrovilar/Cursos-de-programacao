@@ -26,7 +26,7 @@ public class VeiculoServico : IVeiculoServico
         _contexto.SaveChanges();
     }
 
-    public Veiculo? BuscapPorId(int id)
+    public Veiculo? BuscaPorId(int id)
     {
         return _contexto.Veiculos.Where(v => v.Id == id).FirstOrDefault();
     }

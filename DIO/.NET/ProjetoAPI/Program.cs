@@ -82,7 +82,7 @@ if (validacao.Mensagens.Count > 0)
 //Inserir veiculo
 app.MapGet("/veiculos/{id}", ([FromQuery] int id, IVeiculoServico veiculoServico) =>
 {
-    var veiculo = veiculoServico.BuscapPorId(id);
+    var veiculo = veiculoServico.BuscaPorId(id);
     if (veiculo == null) return Results.NotFound();
     return Results.Ok(veiculo);
 }).WithTags("Veiculos");
@@ -90,7 +90,7 @@ app.MapGet("/veiculos/{id}", ([FromQuery] int id, IVeiculoServico veiculoServico
 //Atualizar veiculo
 app.MapPut("/veiculos/{id}", ([FromRoute] int id, VeiculoDTO veiculoDTO, IVeiculoServico veiculoServico) =>
 {
-    var veiculo = veiculoServico.BuscapPorId(id);
+    var veiculo = veiculoServico.BuscaPorId(id);
     if (veiculo == null) return Results.NotFound();
 
     var validacao = validaDTO(veiculoDTO);
@@ -107,7 +107,7 @@ app.MapPut("/veiculos/{id}", ([FromRoute] int id, VeiculoDTO veiculoDTO, IVeicul
 //Deletar veiculo
 app.MapDelete("/veiculos/{id}", ([FromRoute] int id, IVeiculoServico veiculoServico) =>
 {
-    var veiculo = veiculoServico.BuscapPorId(id);
+    var veiculo = veiculoServico.BuscaPorId(id);
     if (veiculo == null) return Results.NotFound();
     veiculoServico.Apagar(veiculo);
     return Results.NoContent();
