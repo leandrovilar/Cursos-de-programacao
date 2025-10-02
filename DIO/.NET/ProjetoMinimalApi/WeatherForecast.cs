@@ -1,4 +1,4 @@
-namespace MinimalApi;
+namespace ProjetoMinimalApi;
 
 public class WeatherForecast
 {
