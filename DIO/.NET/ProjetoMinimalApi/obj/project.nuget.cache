@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JQ84nZ8RYFQ=",
+  "dgSpecHash": "hZTLvHWe7KU=",
   "success": true,
-  "projectFilePath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj",
+  "projectFilePath": "c:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.20\\microsoft.aspnetcore.openapi.7.0.20.nupkg.sha512",
     "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
