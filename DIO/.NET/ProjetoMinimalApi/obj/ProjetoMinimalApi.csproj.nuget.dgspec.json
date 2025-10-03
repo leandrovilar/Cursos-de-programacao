@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj": {}
+    "c:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj": {}
   },
   "projects": {
-    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj": {
+    "c:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj",
+        "projectUniqueName": "c:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj",
         "projectName": "ProjetoMinimalApi",
-        "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj",
+        "projectPath": "c:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\ProjetoMinimalApi.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\obj\\",
+        "outputPath": "c:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
