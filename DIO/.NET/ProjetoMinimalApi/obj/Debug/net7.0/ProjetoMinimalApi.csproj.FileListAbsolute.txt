@@ -34,3 +34,13 @@ C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\obj\Debug\net7.
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\obj\Debug\net7.0\ProjetoMinimalApi.pdb
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\obj\Debug\net7.0\ProjetoMinimalApi.genruntimeconfig.cache
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\obj\Debug\net7.0\ref\ProjetoMinimalApi.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Humanizer.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\MySqlConnector.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\System.CodeDom.dll

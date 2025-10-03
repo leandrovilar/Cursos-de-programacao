@@ -1,9 +1,21 @@
+using ProjetoMinimalApi.Infraestrutura.Db;
+using ProjetoMinimalApi.DTOs;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<DbContexto>(options =>
+{
+options.UseMySql(
+    builder.Configuration.GetConnectionString("mysql"),
+    ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("mysql"))
+    );
+});
 
 var app = builder.Build();
 app.MapGet("/", () => "Olá pessoal");
 
-app.MapPost("/login", (LoginDTO loginDTO) =>
+app.MapPost("/login", (ProjetoMinimalApi.DTOs.LoginDTO loginDTO) =>
 {
     if (loginDTO.Email == "adm@teste.com" && loginDTO.Senha == "123456")
         return Results.Ok("Login com sucesso");
@@ -12,10 +24,6 @@ app.MapPost("/login", (LoginDTO loginDTO) =>
 });
 
 app.Run();
-public class LoginDTO
-{
-    public string Email { get; set; } = default!;
-    public string Senha { get; set; } = default!;
-}
+
 
 
