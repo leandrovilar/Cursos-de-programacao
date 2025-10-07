@@ -44,3 +44,11 @@ C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\MySqlConnector.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\System.CodeDom.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\ProjetoMinimalApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
