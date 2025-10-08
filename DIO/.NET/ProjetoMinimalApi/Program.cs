@@ -15,6 +15,8 @@ using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.OpenApi.Models;
+using System.Reflection.Metadata;
 #endregion
 
 #region Builder
@@ -33,6 +35,8 @@ builder.Services.AddAuthentication(option =>
     {
         ValidateLifetime = true,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
+        ValidateIssuer = false,
+        ValidateAudience = false,
     };
 });
 
@@ -43,7 +47,32 @@ builder.Services.AddScoped<IVeiculoServico, VeiculoServico>();
 
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Beares", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Insira o token JWT aqui"
+    });
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme{
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Beares"
+                }
+            },
+            new string[] { }
+        }
+    });
+});
+
 
 builder.Services.AddDbContext<DbContexto>(options =>
 {
@@ -57,7 +86,7 @@ var app = builder.Build();
 #endregion
 
 #region Home
-app.MapGet("/", () => Results.Json(new Home())).WithTags("Home");
+app.MapGet("/", () => Results.Json(new Home())).AllowAnonymous().WithTags("Home");
 #endregion
 
 #region Administradores
@@ -73,7 +102,7 @@ string GerarTokenJwt(Administrador administrador)
         new Claim("Email", administrador.Email),
         new Claim("Perfil", administrador.Perfil)
     };
-    
+
     var token = new JwtSecurityToken(
         claims: claims,
         expires: DateTime.Now.AddDays(1),
@@ -97,7 +126,7 @@ app.MapPost("administradores/login", ([FromBody] LoginDTO loginDTO, IAdministrad
     }
     else
         return Results.Unauthorized();
-}).WithTags("Administradores");
+}).AllowAnonymous().WithTags("Administradores");
 
 app.MapGet("administradores", ([FromQuery] int? pagina, IAdministradorServico administradorServico) =>
 {
