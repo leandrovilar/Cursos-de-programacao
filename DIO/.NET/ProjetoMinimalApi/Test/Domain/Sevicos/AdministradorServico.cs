@@ -41,9 +41,10 @@ public sealed class AdministradorServicoTest
 
         //Act
         administradorServico.Incluir(adm);
+        var admDoBanco = administradorServico.BuscarPorId(adm.Id);
 
         //Assert
-        Assert.AreEqual(1, administradorServico.Todos(1).Count());
+        Assert.AreEqual(1, admDoBanco?.Id);
     }
     
 };
