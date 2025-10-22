@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using ProjetoGerenciadorVeiculos.Infraestrutura.Db;
-using ProjetoGerenciadorVeiculos.Dominio.Entidades;
+using ProjetoGerenciadorVeiculos.Dominio.Interfaces;
+using ProjetoGerenciadorVeiculos.Dominio.Servicos;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configurar conexão MySQL
+// Configura banco de dados MySQL
 builder.Services.AddDbContext<DbContexto>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("MySql"),
@@ -12,18 +14,23 @@ builder.Services.AddDbContext<DbContexto>(options =>
     )
 );
 
-// Swagger
+// Registra serviços
+builder.Services.AddScoped<IUsuarioServico, UsuarioServico>();
+
+// Configura Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Swagger UI
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapGet("/", () => "🚗 API de Gerenciamento de Veículos rodando com .NET 8!");
+// Endpoint de teste
+app.MapGet("/", () => "🚗 API Gerenciador de Veículos rodando com .NET 8!");
 
-// Endpoint de teste inicial
-app.MapGet("/usuarios", async (DbContexto db) => await db.Usuarios.ToListAsync());
+// Endpoint simples de usuários (teste)
+app.MapGet("/usuarios", (IUsuarioServico servico) => servico.Todos());
 
 app.Run();
