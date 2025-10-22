@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JTWtUVF43Iw=",
+  "dgSpecHash": "+b0gbxmhVig=",
   "success": true,
-  "projectFilePath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\api\\Api.csproj",
+  "projectFilePath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leandro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.21\\microsoft.aspnetcore.openapi.8.0.21.nupkg.sha512",

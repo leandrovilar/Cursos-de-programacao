@@ -2718,6 +2718,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.21",
+      "Microsoft.EntityFrameworkCore >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.3",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -2730,11 +2731,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\api\\Api.csproj",
+      "projectUniqueName": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\api\\Api.csproj",
+      "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-      "outputPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\api\\obj\\",
+      "outputPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\Desafio\\ProjetoGerenciadorVeiculos\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2776,6 +2777,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.21, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.3, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
