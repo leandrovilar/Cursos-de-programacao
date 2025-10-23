@@ -106,3 +106,11 @@ C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculo
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\obj\Debug\net8.0\Api.pdb
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\obj\Debug\net8.0\ref\Api.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

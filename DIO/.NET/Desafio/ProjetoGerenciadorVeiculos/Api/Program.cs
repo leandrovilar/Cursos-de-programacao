@@ -5,6 +5,12 @@ using ProjetoGerenciadorVeiculos.Dominio.Interfaces;
 using ProjetoGerenciadorVeiculos.Dominio.Servicos;
 using ProjetoGerenciadorVeiculos.Dominio.DTOs;
 using ProjetoGerenciadorVeiculos.Dominio.Entidades;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
 #endregion
 
 #region Builder
@@ -17,6 +23,27 @@ builder.Services.AddDbContext<DbContexto>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("MySql"))
     )
 );
+
+//Autenticação JWT
+var key = builder.Configuration["Jwt"] ?? "chave-super-secreta-padrao";
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
+    };
+});
+
+builder.Services.AddAuthorization();
 
 // Registra serviços
 builder.Services.AddScoped<IUsuarioServico, UsuarioServico>();
@@ -79,6 +106,45 @@ app.MapDelete("/usuarios/{id}", (int id, IUsuarioServico servico) =>
 });
 #endregion
 
+#region  Login
+//Login
+app.MapPost("/login", (LoginDTO login, DbContexto db) =>
+{
+    var usuario = db.Usuarios.FirstOrDefault(u =>
+        u.Email == login.Email && u.Senha == login.Senha);
+
+    if (usuario is null)
+        return Results.Unauthorized();
+
+    var key = builder.Configuration["Jwt"] ?? "chave-super-secreta-padrao";
+    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
+    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+    var claims = new[]
+    {
+        new Claim("Email", usuario.Email),
+        new Claim("Id", usuario.Id.ToString()),
+        new Claim(ClaimTypes.Role, usuario.Perfil.ToString())
+    };
+
+    var token = new JwtSecurityToken(
+        claims: claims,
+        expires: DateTime.Now.AddHours(3),
+        signingCredentials: credentials
+    );
+
+    var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+
+    return Results.Ok(new
+    {
+        token = tokenString,
+        usuario = new { usuario.Id, usuario.Nome, usuario.Email, usuario.Perfil }
+    });
+})
+.WithTags("Autenticação")
+.AllowAnonymous();
+#endregion
+
 #region Veiculo
 //Endpoint Veiculos
 app.MapGet("/veiculos", (IVeiculoServico servico) =>
@@ -103,7 +169,9 @@ app.MapPost("/veiculos", (VeiculoDTO dto, IVeiculoServico servico) =>
     };
     servico.Incluir(veiculo);
     return Results.Created($"/veiculos/{veiculo.Id}", veiculo);
-});
+})
+.RequireAuthorization(new AuthorizeAttribute { Roles = "Admin,Editor" })
+.WithTags("Veículos");
 
 app.MapPut("/veiculos/{id}", (int id, VeiculoDTO dto, IVeiculoServico servico) =>
 {
@@ -126,7 +194,11 @@ app.MapDelete("/veiculos/{id}", (int id, IVeiculoServico servico) =>
 
     servico.Apagar(veiculo);
     return Results.NoContent();
-});
+})
+.RequireAuthorization(new AuthorizeAttribute { Roles = "Admin" })
+.WithTags("Veículos");
 #endregion
 
+app.UseAuthentication();
+app.UseAuthorization();
 app.Run();
