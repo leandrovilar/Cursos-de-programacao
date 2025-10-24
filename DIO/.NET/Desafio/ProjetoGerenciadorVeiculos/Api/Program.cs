@@ -160,7 +160,6 @@ app.MapGet("/me", (ClaimsPrincipal user) =>
 .WithTags("Autenticação");
 #endregion
 
-
 #region Usuario
 //Endpoint Usuarios
 
