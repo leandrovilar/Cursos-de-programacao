@@ -86,7 +86,17 @@ builder.Services.AddSwaggerGen(options =>
             new string[] {}
         }
     });
+
+     // 📚 Organização das tags no Swagger
+    options.DocumentFilter<SwaggerTagDescriptions>();
 });
+
+
+
+
+
+
+
 var app = builder.Build();
 #endregion
 
@@ -98,8 +108,9 @@ app.UseSwaggerUI();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Endpoint de teste
-app.MapGet("/", () => "🚗 API Gerenciador de Veículos rodando com .NET 8!");
+// // 🏠 Página inicial (Endpoint de teste)
+app.MapGet("/", () => "🚗 API Gerenciador de Veículos rodando com .NET 8!")
+.WithTags("Home");
 
 #region  Login
 //Login
@@ -225,13 +236,15 @@ app.MapDelete("/usuarios/{id}", (int id, IUsuarioServico servico) =>
 app.MapGet("/veiculos", (IVeiculoServico servico) =>
 {
     return Results.Ok(servico.Todos());
-});
+})
+.WithTags("Veículos");
 
 app.MapGet("/veiculos/{id}", (int id, IVeiculoServico servico) =>
 {
     var veiculo = servico.BuscarPorId(id);
     return veiculo is null ? Results.NotFound() : Results.Ok(veiculo);
-});
+})
+.WithTags("Veículos");
 
 app.MapPost("/veiculos", (VeiculoDTO dto, IVeiculoServico servico) =>
 {
@@ -260,7 +273,8 @@ app.MapPut("/veiculos/{id}", (int id, VeiculoDTO dto, IVeiculoServico servico) =
 
     servico.Atualizar(veiculo);
     return Results.Ok(veiculo);
-});
+})
+.WithTags("Veículos");
 
 app.MapDelete("/veiculos/{id}", (int id, IVeiculoServico servico) =>
 {
