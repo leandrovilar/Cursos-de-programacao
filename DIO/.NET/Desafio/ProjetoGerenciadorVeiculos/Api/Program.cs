@@ -12,6 +12,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.OpenApi.Models;
+using ProjetoGerenciadorVeiculos.Dominio.ModelViews;
 #endregion
 
 #region Builder
@@ -194,6 +195,20 @@ app.MapGet("/usuarios/{id}", (int id, IUsuarioServico servico) =>
 // ✅ Criar novo usuário — apenas Admin
 app.MapPost("/usuarios", (UsuarioDTO dto, IUsuarioServico servico) =>
 {
+    var validacao = new ErrosDeValidacao();
+    if (string.IsNullOrWhiteSpace(dto.Nome))
+        validacao.Mensagens.Add("O nome não pode ser vazio.");
+
+    if (string.IsNullOrWhiteSpace(dto.Email))
+        validacao.Mensagens.Add("O e-mail não pode ser vazio.");
+
+    if (string.IsNullOrWhiteSpace(dto.Senha))
+        validacao.Mensagens.Add("A senha não pode ser vazia.");
+
+    // se deu erro, responde 400 e nem tenta salvar
+    if (validacao.Mensagens.Count > 0)
+        return Results.BadRequest(validacao);
+
     var usuario = new Usuario { Nome = dto.Nome, Email = dto.Email, Senha = dto.Senha, Perfil = dto.Perfil };
     servico.Incluir(usuario);
     return Results.Created($"/usuarios/{usuario.Id}", usuario);
@@ -206,6 +221,20 @@ app.MapPut("/usuarios/{id}", (int id, UsuarioDTO dto, IUsuarioServico servico) =
 {
     var usuario = servico.BuscarPorId(id);
     if (usuario is null) return Results.NotFound();
+
+        var validacao = new ErrosDeValidacao();
+
+    if (string.IsNullOrWhiteSpace(dto.Nome))
+        validacao.Mensagens.Add("O nome não pode ser vazio.");
+
+    if (string.IsNullOrWhiteSpace(dto.Email))
+        validacao.Mensagens.Add("O e-mail não pode ser vazio.");
+
+    if (string.IsNullOrWhiteSpace(dto.Senha))
+        validacao.Mensagens.Add("A senha não pode ser vazia.");
+
+    if (validacao.Mensagens.Count > 0)
+        return Results.BadRequest(validacao);
 
     usuario.Nome = dto.Nome;
     usuario.Email = dto.Email;
@@ -248,6 +277,20 @@ app.MapGet("/veiculos/{id}", (int id, IVeiculoServico servico) =>
 
 app.MapPost("/veiculos", (VeiculoDTO dto, IVeiculoServico servico) =>
 {
+     var validacao = new ErrosDeValidacao();
+
+    if (string.IsNullOrWhiteSpace(dto.Marca))
+        validacao.Mensagens.Add("A marca é obrigatória.");
+
+    if (string.IsNullOrWhiteSpace(dto.Modelo))
+        validacao.Mensagens.Add("O modelo é obrigatório.");
+
+    if (dto.Ano < 1950)
+        validacao.Mensagens.Add("Ano inválido: muito antigo.");
+
+    if (validacao.Mensagens.Count > 0)
+        return Results.BadRequest(validacao);
+
     var veiculo = new Veiculo
     {
         Marca = dto.Marca,
@@ -265,6 +308,20 @@ app.MapPut("/veiculos/{id}", (int id, VeiculoDTO dto, IVeiculoServico servico) =
 {
     var veiculo = servico.BuscarPorId(id);
     if (veiculo is null) return Results.NotFound();
+
+     var validacao = new ErrosDeValidacao();
+
+    if (string.IsNullOrWhiteSpace(dto.Marca))
+        validacao.Mensagens.Add("A marca é obrigatória.");
+
+    if (string.IsNullOrWhiteSpace(dto.Modelo))
+        validacao.Mensagens.Add("O modelo é obrigatório.");
+
+    if (dto.Ano < 1950)
+        validacao.Mensagens.Add("Ano inválido: muito antigo.");
+
+    if (validacao.Mensagens.Count > 0)
+        return Results.BadRequest(validacao);
 
     veiculo.Marca = dto.Marca;
     veiculo.Modelo = dto.Modelo;

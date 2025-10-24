@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\api\\ProjetoMinimalApi.csproj": {}
+    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\VeiculosMinimalApi\\Veiculos\\ProjetoMinimalApi.csproj": {}
   },
   "projects": {
-    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\api\\ProjetoMinimalApi.csproj": {
+    "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\VeiculosMinimalApi\\Veiculos\\ProjetoMinimalApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\api\\ProjetoMinimalApi.csproj",
+        "projectUniqueName": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\VeiculosMinimalApi\\Veiculos\\ProjetoMinimalApi.csproj",
         "projectName": "ProjetoMinimalApi",
-        "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\api\\ProjetoMinimalApi.csproj",
+        "projectPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\VeiculosMinimalApi\\Veiculos\\ProjetoMinimalApi.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\ProjetoMinimalApi\\api\\obj\\",
+        "outputPath": "C:\\Programacao\\#Cursos-de-programacao\\DIO\\.NET\\VeiculosMinimalApi\\Veiculos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -102,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
