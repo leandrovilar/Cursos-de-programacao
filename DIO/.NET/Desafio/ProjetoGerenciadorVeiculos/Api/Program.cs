@@ -92,12 +92,6 @@ builder.Services.AddSwaggerGen(options =>
     options.DocumentFilter<SwaggerTagDescriptions>();
 });
 
-
-
-
-
-
-
 var app = builder.Build();
 #endregion
 
@@ -115,7 +109,7 @@ app.MapGet("Home", () => "🚗 API Gerenciador de Veículos rodando com .NET 8!"
 
 #region  Login
 //Login
-app.MapPost("Login do Usuário", (LoginDTO login, DbContexto db) =>
+app.MapPost("/login", (LoginDTO login, DbContexto db) =>
 {
     var usuario = db.Usuarios.FirstOrDefault(u =>
         u.Email == login.Email && u.Senha == login.Senha);
@@ -155,7 +149,7 @@ app.MapPost("Login do Usuário", (LoginDTO login, DbContexto db) =>
 
 #region Me
 //Endpoint Me
-app.MapGet("Usuário autenticado", (ClaimsPrincipal user) =>
+app.MapGet("/Me", (ClaimsPrincipal user) =>
 {
     var email = user.FindFirst(ClaimTypes.Name)?.Value;
     var id = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -176,7 +170,7 @@ app.MapGet("Usuário autenticado", (ClaimsPrincipal user) =>
 //Endpoint Usuarios
 
 // ✅ Listar usuários — apenas Admin
-app.MapGet("Listar todos os usuários", (IUsuarioServico servico) =>
+app.MapGet("/usuarios", (IUsuarioServico servico) =>
 {
     return Results.Ok(servico.Todos());
 })
@@ -184,7 +178,7 @@ app.MapGet("Listar todos os usuários", (IUsuarioServico servico) =>
 .WithTags("Usuários");
 
 // ✅ Buscar usuário por ID — Admin e Editor podem
-app.MapGet("Buscar usuário por {id}", (int id, IUsuarioServico servico) =>
+app.MapGet("/usuarios/{id}", (int id, IUsuarioServico servico) =>
 {
     var usuario = servico.BuscarPorId(id);
     return usuario is null ? Results.NotFound() : Results.Ok(usuario);
@@ -193,7 +187,7 @@ app.MapGet("Buscar usuário por {id}", (int id, IUsuarioServico servico) =>
 .WithTags("Usuários");
 
 // ✅ Criar novo usuário — apenas Admin
-app.MapPost("Cadastrar novo usuário", (UsuarioDTO dto, IUsuarioServico servico) =>
+app.MapPost("/usuarios", (UsuarioDTO dto, IUsuarioServico servico) =>
 {
     var validacao = new ErrosDeValidacao();
     if (string.IsNullOrWhiteSpace(dto.Nome))
@@ -217,7 +211,7 @@ app.MapPost("Cadastrar novo usuário", (UsuarioDTO dto, IUsuarioServico servico)
 .WithTags("Usuários");
 
 // ✅ Atualizar — Admin e Editor podem
-app.MapPut("Atualizar usuário existente", (int id, UsuarioDTO dto, IUsuarioServico servico) =>
+app.MapPut("/usuarios/{id}", (int id, UsuarioDTO dto, IUsuarioServico servico) =>
 {
     var usuario = servico.BuscarPorId(id);
     if (usuario is null) return Results.NotFound();
@@ -248,7 +242,7 @@ app.MapPut("Atualizar usuário existente", (int id, UsuarioDTO dto, IUsuarioServ
 .WithTags("Usuários");
 
 // ✅ Excluir usuário — somente Admin
-app.MapDelete("Excluir usuário", (int id, IUsuarioServico servico) =>
+app.MapDelete("/usuarios/{id}", (int id, IUsuarioServico servico) =>
 {
     var usuario = servico.BuscarPorId(id);
     if (usuario is null) return Results.NotFound();
@@ -262,20 +256,20 @@ app.MapDelete("Excluir usuário", (int id, IUsuarioServico servico) =>
 
 #region Veiculo
 //Endpoint Veiculos
-app.MapGet("Listar veículos", (IVeiculoServico servico) =>
+app.MapGet("/veiculos", (IVeiculoServico servico) =>
 {
     return Results.Ok(servico.Todos());
 })
 .WithTags("Veículos");
 
-app.MapGet("Buscar veículo por {id}", (int id, IVeiculoServico servico) =>
+app.MapGet("/veiculos/{id}", (int id, IVeiculoServico servico) =>
 {
     var veiculo = servico.BuscarPorId(id);
     return veiculo is null ? Results.NotFound() : Results.Ok(veiculo);
 })
 .WithTags("Veículos");
 
-app.MapPost("Cadastrar novo veículo", (VeiculoDTO dto, IVeiculoServico servico) =>
+app.MapPost("/veiculos", (VeiculoDTO dto, IVeiculoServico servico) =>
 {
      var validacao = new ErrosDeValidacao();
 
@@ -304,7 +298,7 @@ app.MapPost("Cadastrar novo veículo", (VeiculoDTO dto, IVeiculoServico servico)
 .RequireAuthorization(new AuthorizeAttribute { Roles = "Admin,Editor" })
 .WithTags("Veículos");
 
-app.MapPut("Atualizar veículo existente", (int id, VeiculoDTO dto, IVeiculoServico servico) =>
+app.MapPut("/veiculos/{id}", (int id, VeiculoDTO dto, IVeiculoServico servico) =>
 {
     var veiculo = servico.BuscarPorId(id);
     if (veiculo is null) return Results.NotFound();
@@ -333,7 +327,7 @@ app.MapPut("Atualizar veículo existente", (int id, VeiculoDTO dto, IVeiculoServ
 })
 .WithTags("Veículos");
 
-app.MapDelete("Excluir veículo", (int id, IVeiculoServico servico) =>
+app.MapDelete("/veiculos/{id}", (int id, IVeiculoServico servico) =>
 {
     var veiculo = servico.BuscarPorId(id);
     if (veiculo is null) return Results.NotFound();
