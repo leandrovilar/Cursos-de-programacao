@@ -18,13 +18,7 @@ C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculo
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Programacao\#Cursos-de-programacao\DIO\.NET\Desafio\ProjetoGerenciadorVeiculos\Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
